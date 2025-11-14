@@ -1,0 +1,1764 @@
+###############################################################################
+#
+# IAR ELF Linker V9.40.1.364/W64 for ARM                  29/May/2025  12:02:32
+# Copyright 2007-2023 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Exe\cyt2bl3.out
+#    Map file     =
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\List\cyt2bl3.map
+#    Command line =
+#        -f
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Exe\cyt2bl3.out.rsp
+#        (D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\base_transfer.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\user_8514941877209965082.dir\cm4_isr.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\adc_11722776235721520015.dir\cy_adc.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\button_4990804375159372270.dir\cy_button.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\canfd_1800690984773873875.dir\cy_canfd.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\cpu_15938736945165268644.dir\cy_cpu.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\crypto_1190170608956581615.dir\cy_crypto_config.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\evtgen_3404189088603873129.dir\cy_evtgen.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\flash_8529866181315662935.dir\cy_flash.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\gpio_3999404635324069351.dir\cy_gpio.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\rev_b_6162237342861132223.dir\cy_interrupt_map.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\ipc_10145506163450686023.dir\cy_ipc_drv.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\ipc_10145506163450686023.dir\cy_ipc_pipe.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\ipc_10145506163450686023.dir\cy_ipc_sema.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\lin_18429031207028094880.dir\cy_lin.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\lvd_6353935867039560245.dir\cy_lvd.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\mcwdt_4052485907822033969.dir\cy_mcwdt.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\dma_12106025507578611576.dir\cy_mdma.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\mpu_5663187252346826382.dir\cy_mpu.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\flash_864493325053435817.dir\cy_mw_flash.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\dma_12106025507578611576.dir\cy_pdma.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\prot_10722960861768657883.dir\cy_prot.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir\cy_scb_common.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir\cy_scb_ezi2c.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir\cy_scb_i2c.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir\cy_scb_spi.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir\cy_scb_uart.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\semihosting_143864889731838620.dir\cy_semihosting.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smartio_5451710003740070188.dir\cy_smartio.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smif_427648126384146252.dir\cy_smif.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smif_427648126384146252.dir\cy_smif_memslot.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smif_427648126384146252.dir\cy_smif_ver_specific.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\srom_13018798572330080582.dir\cy_srom.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sw_timer_4215635015939382130.dir\cy_sw_tmr.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysclk_16149231235676103872.dir\cy_sysclk.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysflt_12293435975120599261.dir\cy_sysflt.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysint_7435970359207984181.dir\cy_sysint.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syslib_16330585751512546975.dir\cy_syslib.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syslib_16330585751512546975.dir\cy_syslib_iar.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syspm_10887939769544754770.dir\cy_syspm.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysreset_14586141425677365288.dir\cy_sysreset.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysrtc_10747768817563771611.dir\cy_sysrtc.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\systick_16016591671695740695.dir\cy_systick.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syswdt_9118657615806274156.dir\cy_syswdt.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir\cy_tcpwm.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir\cy_tcpwm_counter.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir\cy_tcpwm_pwm.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir\cy_tcpwm_quaddec.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir\cy_tcpwm_sr.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\trigmux_9729677290734583340.dir\cy_trigmux.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\enconder.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\image.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\imu.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\ins.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\key.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\user_8514941877209965082.dir\main_cm4.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\motor.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\pid.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_components_14936052685886095442.dir\seekfree_assistant.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_components_14936052685886095442.dir\seekfree_assistant_interface.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\startup_479057977785470282.dir\startup.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\startup_479057977785470282.dir\startup_cm4.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\rev_b_4986922561640112550.dir\system_tviibe4m_cm4.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\vofa_function.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir\vofa_uart.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir\zf_common_clock.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir\zf_common_debug.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir\zf_common_fifo.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir\zf_common_font.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir\zf_common_function.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir\zf_common_interrupt.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_ble6a20.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_dl1a.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_dl1b.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_gnss.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_icm20602.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_imu660ra.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_imu963ra.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_ips114.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_ips200.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_key.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_menc15a.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_mt9v03x.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_oled.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_tft180.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_tsl1401.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_type.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_uart_receiver.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_wifi_uart.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir\zf_device_wireless_uart.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_adc.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_delay.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_encoder.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_exti.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_flash.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_gpio.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_pit.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_pwm.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_soft_iic.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_soft_spi.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_spi.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_timer.o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir\zf_driver_uart.o
+#        --no_out_extension -o
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Exe\cyt2bl3.out
+#        --config_def _CORE_cm4_=0 --config_def _LINK_flash_=0 --map
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\List\cyt2bl3.map
+#        --config
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\project_config\..\icf\linker_directives_tviibe4m.icf
+#        --semihosting
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_device\zf_device_config.a
+#        --entry __iar_program_start --vfe --text_out locale --cpu=Cortex-M4
+#        --fpu=VFPv4_sp) --dependencies=n
+#        D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Exe\cyt2bl3.out.iar_deps
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because --advanced_heap
+was not specified and the application did not appear to
+be primarily optimized for speed.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at start of [from 0x1008'0000 to 0x1040'ffff] { section .intvec };
+"P1":  place in [from 0x1008'0000 to 0x1040'ffff] { ro };
+"P2":  place in [from 0x802'0000 to 0x807'ffff] { rw };
+define block HEAP with size = 1K, alignment = 8 { };
+define block CSTACK with size = 8K, alignment = 8 { };
+define block HEAP_STACK { block HEAP, last block CSTACK };
+"A1":  place at end of [from 0x802'0000 to 0x807'ffff] { block HEAP_STACK };
+do not initialize { section .intvec_ram };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section .sflash_app_prot  in "P6"
+  ro section .sflash_nar       in "P4"
+  ro section .sflash_pkey      in "P5"
+  ro section .sflash_toc2      in "P7"
+  ro section .sflash_uf_rows   in "P3"
+  ro section .work_flash       in "P8"
+  section .global_ram_data     in "P9"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+Absolute sections, part 1 of 2:               0x4
+  .noinit            uninit    0x800'6918     0x2  zf_device_mt9v03x.o [41]
+  .noinit            uninit    0x800'691a     0x2  zf_device_mt9v03x.o [41]
+                             - 0x800'691c     0x4
+
+Absolute sections, part 2 of 2:            0x1608
+  .noinit            uninit    0x802'0658  0x1608  zf_device_mt9v03x.o [41]
+                             - 0x802'1c60  0x1608
+
+"P2", part 1 of 3:                          0x6f8
+  P2-1                         0x802'1c60   0x6f8  <Init block>
+    .data            inited    0x802'1c60   0x5fc  cy_interrupt_map.o [19]
+    .data            inited    0x802'225c     0x4  cy_interrupt_map.o [19]
+    .data            inited    0x802'2260    0x3c  image.o [4]
+    .data            inited    0x802'229c     0x4  image.o [4]
+    .data            inited    0x802'22a0     0x4  imu.o [4]
+    .data            inited    0x802'22a4     0x8  zf_device_imu660ra.o [41]
+    .data            inited    0x802'22ac     0x4  zf_device_type.o [41]
+    .data            inited    0x802'22b0     0x4  zf_driver_encoder.o [42]
+    .data            inited    0x802'22b4    0x10  zf_driver_encoder.o [42]
+    .data            inited    0x802'22c4    0x3c  zf_driver_pit.o [42]
+    .data            inited    0x802'2300    0x10  zf_driver_spi.o [42]
+    .data            inited    0x802'2310    0x14  zf_driver_uart.o [42]
+    .data            inited    0x802'2324    0x14  zf_driver_uart.o [42]
+    .data            inited    0x802'2338     0x2  image.o [4]
+    .data            inited    0x802'233a     0x2  image.o [4]
+    .data            inited    0x802'233c     0x2  image.o [4]
+    .data            inited    0x802'233e     0x2  image.o [4]
+    .data            inited    0x802'2340     0x2  image.o [4]
+    .data            inited    0x802'2342     0x2  zf_device_ips200.o [41]
+    .data            inited    0x802'2344     0x2  zf_device_ips200.o [41]
+    .data            inited    0x802'2346     0x2  zf_device_ips200.o [41]
+    .data            inited    0x802'2348     0x2  zf_device_ips200.o [41]
+    .data            inited    0x802'234a     0x1  image.o [4]
+    .data            inited    0x802'234b     0x1  image.o [4]
+    .data            inited    0x802'234c     0x1  image.o [4]
+    .data            inited    0x802'234d     0x1  image.o [4]
+    .data            inited    0x802'234e     0x1  image.o [4]
+    .data            inited    0x802'234f     0x1  image.o [4]
+    .data            inited    0x802'2350     0x1  ins.o [4]
+    .data            inited    0x802'2351     0x1  zf_common_debug.o [39]
+    .data            inited    0x802'2352     0x1  zf_device_ips200.o [41]
+    .data            inited    0x802'2353     0x1  zf_device_ips200.o [41]
+    .data            inited    0x802'2354     0x1  zf_device_ips200.o [41]
+    .data            inited    0x802'2355     0x1  zf_device_ips200.o [41]
+    .data            inited    0x802'2356     0x1  zf_driver_delay.o [42]
+    .data            inited    0x802'2357     0x1  zf_driver_delay.o [42]
+                             - 0x802'2358   0x6f8
+
+"P2", part 2 of 3:                         0x3f00
+  .bss               zero      0x802'2358  0x1608  image.o [4]
+  .bss               zero      0x802'3960  0x1608  zf_device_mt9v03x.o [41]
+  .bss               zero      0x802'4f68   0x800  zf_driver_flash.o [42]
+  .bss               zero      0x802'5768   0x1e0  ins.o [4]
+  .bss               zero      0x802'5948   0x118  zf_driver_uart.o [42]
+  .bss               zero      0x802'5a60    0x78  image.o [4]
+  .bss               zero      0x802'5ad8    0x78  image.o [4]
+  .bss               zero      0x802'5b50    0x78  image.o [4]
+  .bss               zero      0x802'5bc8    0x78  image.o [4]
+  .bss               zero      0x802'5c40    0x78  image.o [4]
+  .bss               zero      0x802'5cb8    0x78  image.o [4]
+  .bss               zero      0x802'5d30    0x70  cy_syslib.o [30]
+  .bss               zero      0x802'5da0    0x40  zf_common_debug.o [39]
+  .bss               zero      0x802'5de0    0x40  zf_device_wireless_uart.o [41]
+  .bss               zero      0x802'5e20    0x3c  pid.o [4]
+  .bss               zero      0x802'5e5c    0x3c  pid.o [4]
+  .bss               zero      0x802'5e98    0x3c  pid.o [4]
+  .bss               zero      0x802'5ed4    0x3c  pid.o [4]
+  .bss               zero      0x802'5f10    0x3c  pid.o [4]
+  .bss               zero      0x802'5f4c    0x28  imu.o [4]
+  .bss               zero      0x802'5f74    0x28  imu.o [4]
+  .bss               zero      0x802'5f9c    0x28  imu.o [4]
+  .bss               zero      0x802'5fc4    0x24  vofa_function.o [4]
+  .bss               zero      0x802'5fe8    0x18  cy_sysclk.o [27]
+  .bss               zero      0x802'6000    0x18  cy_syslib.o [30]
+  .bss               zero      0x802'6018    0x18  vofa_function.o [4]
+  .bss               zero      0x802'6030    0x18  zf_common_debug.o [39]
+  .bss               zero      0x802'6048    0x18  zf_device_wireless_uart.o [41]
+  .bss               zero      0x802'6060    0x14  imu.o [4]
+  .bss               zero      0x802'6074    0x14  imu.o [4]
+  .bss               zero      0x802'6088    0x14  imu.o [4]
+  .bss               zero      0x802'609c    0x14  imu.o [4]
+  .bss               zero      0x802'60b0    0x14  imu.o [4]
+  .bss               zero      0x802'60c4    0x14  imu.o [4]
+  .bss               zero      0x802'60d8    0x14  zf_common_debug.o [39]
+  .bss               zero      0x802'6100    0x10  cy_srom.o [24]
+  .bss               zero      0x802'6110    0x10  zf_device_config_mt9v03x.o [47]
+  .bss               zero      0x802'6120     0xc  imu.o [4]
+  .bss               zero      0x802'612c     0x8  imu.o [4]
+  .bss               zero      0x802'6134     0x8  imu.o [4]
+  .bss               zero      0x802'613c     0x8  imu.o [4]
+  .bss               zero      0x802'6144     0x8  zf_driver_uart.o [42]
+  .bss               zero      0x802'614c     0x8  zf_driver_uart.o [42]
+  .bss               zero      0x802'6154     0x4  cy_srom.o [24]
+  .bss               zero      0x802'6158     0x4  cy_srom.o [24]
+  .bss               zero      0x802'615c     0x4  cy_syslib.o [30]
+  .bss               zero      0x802'6160     0x4  image.o [4]
+  .bss               zero      0x802'6164     0x4  image.o [4]
+  .bss               zero      0x802'6168     0x4  imu.o [4]
+  .bss               zero      0x802'616c     0x4  imu.o [4]
+  .bss               zero      0x802'6170     0x4  imu.o [4]
+  .bss               zero      0x802'6174     0x4  imu.o [4]
+  .bss               zero      0x802'6178     0x4  imu.o [4]
+  .bss               zero      0x802'617c     0x4  imu.o [4]
+  .bss               zero      0x802'6180     0x4  imu.o [4]
+  .bss               zero      0x802'6184     0x4  imu.o [4]
+  .bss               zero      0x802'6188     0x4  imu.o [4]
+  .bss               zero      0x802'618c     0x4  imu.o [4]
+  .bss               zero      0x802'6190     0x4  imu.o [4]
+  .bss               zero      0x802'6194     0x4  imu.o [4]
+  .bss               zero      0x802'6198     0x4  imu.o [4]
+  .bss               zero      0x802'619c     0x4  imu.o [4]
+  .bss               zero      0x802'61a0     0x4  ins.o [4]
+  .bss               zero      0x802'61a4     0x4  ins.o [4]
+  .bss               zero      0x802'61a8     0x4  ins.o [4]
+  .bss               zero      0x802'61ac     0x4  motor.o [4]
+  .bss               zero      0x802'61b0     0x4  motor.o [4]
+  .bss               zero      0x802'61b4     0x4  motor.o [4]
+  .bss               zero      0x802'61b8     0x4  system_tviibe4m_cm4.o [18]
+  .bss               zero      0x802'61bc     0x4  system_tviibe4m_cm4.o [18]
+  .bss               zero      0x802'61c0     0x4  system_tviibe4m_cm4.o [18]
+  .bss               zero      0x802'61c4     0x4  system_tviibe4m_cm4.o [18]
+  .bss               zero      0x802'61c8     0x4  system_tviibe4m_cm4.o [18]
+  .bss               zero      0x802'61cc     0x4  zf_common_clock.o [39]
+  .bss               zero      0x802'61d0     0x4  zf_common_interrupt.o [39]
+  .bss               zero      0x802'61d4     0x4  zf_driver_encoder.o [42]
+  .bss               zero      0x802'61d8     0x4  zf_driver_spi.o [42]
+  .bss               zero      0x802'61dc     0x4  zf_driver_spi.o [42]
+  .bss               zero      0x802'61e0     0x4  zf_device_config_mt9v03x.o [47]
+  .bss               zero      0x802'61e4     0x4  zf_device_config_mt9v03x.o [47]
+  .bss               zero      0x802'61e8     0x4  zf_device_config_mt9v03x.o [47]
+  .bss               zero      0x802'61ec     0x4  zf_device_config_mt9v03x.o [47]
+  .bss               zero      0x802'61f0     0x4  zf_device_config_mt9v03x.o [47]
+  .bss               zero      0x802'61f4     0x4  xfail_s.o [43]
+  .bss               zero      0x802'61f8     0x2  enconder.o [4]
+  .bss               zero      0x802'61fa     0x2  enconder.o [4]
+  .bss               zero      0x802'61fc     0x2  image.o [4]
+  .bss               zero      0x802'61fe     0x2  image.o [4]
+  .bss               zero      0x802'6200     0x2  image.o [4]
+  .bss               zero      0x802'6202     0x2  image.o [4]
+  .bss               zero      0x802'6204     0x2  image.o [4]
+  .bss               zero      0x802'6206     0x2  image.o [4]
+  .bss               zero      0x802'6208     0x2  image.o [4]
+  .bss               zero      0x802'620a     0x2  image.o [4]
+  .bss               zero      0x802'620c     0x2  image.o [4]
+  .bss               zero      0x802'620e     0x2  image.o [4]
+  .bss               zero      0x802'6210     0x2  image.o [4]
+  .bss               zero      0x802'6212     0x2  image.o [4]
+  .bss               zero      0x802'6214     0x2  image.o [4]
+  .bss               zero      0x802'6216     0x2  image.o [4]
+  .bss               zero      0x802'6218     0x2  image.o [4]
+  .bss               zero      0x802'621a     0x2  image.o [4]
+  .bss               zero      0x802'621c     0x2  image.o [4]
+  .bss               zero      0x802'621e     0x2  image.o [4]
+  .bss               zero      0x802'6220     0x2  image.o [4]
+  .bss               zero      0x802'6222     0x2  image.o [4]
+  .bss               zero      0x802'6224     0x2  ins.o [4]
+  .bss               zero      0x802'6226     0x2  ins.o [4]
+  .bss               zero      0x802'6228     0x2  pid.o [4]
+  .bss               zero      0x802'622a     0x2  pid.o [4]
+  .bss               zero      0x802'622c     0x2  zf_device_imu660ra.o [41]
+  .bss               zero      0x802'622e     0x2  zf_device_imu660ra.o [41]
+  .bss               zero      0x802'6230     0x2  zf_device_imu660ra.o [41]
+  .bss               zero      0x802'6232     0x2  zf_device_imu660ra.o [41]
+  .bss               zero      0x802'6234     0x2  zf_device_imu660ra.o [41]
+  .bss               zero      0x802'6236     0x2  zf_device_imu660ra.o [41]
+  .bss               zero      0x802'6238     0x1  cy_mw_flash.o [10]
+  .bss               zero      0x802'6239     0x1  cy_mw_flash.o [10]
+  .bss               zero      0x802'623a     0x1  cy_sysclk.o [27]
+  .bss               zero      0x802'623b     0x1  image.o [4]
+  .bss               zero      0x802'623c     0x1  image.o [4]
+  .bss               zero      0x802'623d     0x1  image.o [4]
+  .bss               zero      0x802'623e     0x1  image.o [4]
+  .bss               zero      0x802'623f     0x1  image.o [4]
+  .bss               zero      0x802'6240     0x1  image.o [4]
+  .bss               zero      0x802'6241     0x1  image.o [4]
+  .bss               zero      0x802'6242     0x1  image.o [4]
+  .bss               zero      0x802'6243     0x1  image.o [4]
+  .bss               zero      0x802'6244     0x1  image.o [4]
+  .bss               zero      0x802'6245     0x1  imu.o [4]
+  .bss               zero      0x802'6246     0x1  ins.o [4]
+  .bss               zero      0x802'6247     0x1  ins.o [4]
+  .bss               zero      0x802'6248     0x1  ins.o [4]
+  .bss               zero      0x802'6249     0x1  ins.o [4]
+  .bss               zero      0x802'624a     0x1  ins.o [4]
+  .bss               zero      0x802'624b     0x1  motor.o [4]
+  .bss               zero      0x802'624c     0x1  vofa_uart.o [4]
+  .bss               zero      0x802'624d     0x1  zf_common_debug.o [39]
+  .bss               zero      0x802'624e     0x1  zf_common_debug.o [39]
+  .bss               zero      0x802'624f     0x1  zf_common_debug.o [39]
+  .bss               zero      0x802'6250     0x1  zf_device_ips200.o [41]
+  .bss               zero      0x802'6251     0x1  zf_device_ips200.o [41]
+  .bss               zero      0x802'6252     0x1  zf_device_mt9v03x.o [41]
+  .bss               zero      0x802'6253     0x1  zf_device_mt9v03x.o [41]
+  .bss               zero      0x802'6254     0x1  zf_device_type.o [41]
+  .bss               zero      0x802'6255     0x1  zf_device_wireless_uart.o [41]
+  .bss               zero      0x802'6256     0x1  zf_driver_flash.o [42]
+                             - 0x802'6257  0x3eff
+
+"P2", part 3 of 3:                           0x80
+  .intvec_ram        uninit    0x802'6400    0x80  startup_cm4.o [25]
+                             - 0x802'6480    0x80
+
+"A1":                                      0x2000
+  HEAP_STACK                   0x807'e000  0x2000  <Block>
+    CSTACK                     0x807'e000  0x2000  <Block>
+      CSTACK         uninit    0x807'e000  0x2000  <Block tail>
+                             - 0x808'0000  0x2000
+
+"A0":                                        0x80
+  .intvec            ro code  0x1008'0000    0x80  startup_cm4.o [25]
+                            - 0x1008'0080    0x80
+
+"P1":                                      0xe34a
+  .rodata            const    0x1008'0080  0x2000  zf_device_config.o [47]
+  .text              ro code  0x1008'2080  0x1148  image.o [4]
+  .text              ro code  0x1008'31c8    0x66  ABImemset.o [45]
+  .text              ro code  0x1008'322e    0x7e  lz77_init_single.o [45]
+  .text              ro code  0x1008'32ac     0x6  ABImemclr4.o [45]
+  .text              ro code  0x1008'32b2     0xa  xsprout.o [43]
+  .text              ro code  0x1008'32bc   0x2a0  pid.o [4]
+  .text              ro code  0x1008'355c    0x1c  U32ToDbl.o [44]
+  .text              ro code  0x1008'3578   0x1aa  DblMul.o [44]
+  .text              ro code  0x1008'3724   0x25e  DblAddSub.o [44]
+  .text              ro code  0x1008'3984    0x36  DblToS32.o [44]
+  .text              ro code  0x1008'39bc    0x32  ABImemset48.o [45]
+  .text              ro code  0x1008'39f0   0xd12  xprintflarge_nomb.o [43]
+  .text              ro code  0x1008'4704    0x16  strchr.o [45]
+  .text              ro code  0x1008'471c    0x40  xfail_s.o [43]
+  .text              ro code  0x1008'475c    0x36  strlen.o [45]
+  .text              ro code  0x1008'4794    0x58  memchr.o [45]
+  .text              ro code  0x1008'47ec    0xa6  ABImemcpy.o [45]
+  .text              ro code  0x1008'4894    0x70  frexp.o [44]
+  .text              ro code  0x1008'4904   0x246  DblDiv.o [44]
+  .text              ro code  0x1008'4b4c    0x22  DblToU32.o [44]
+  .text              ro code  0x1008'4b70   0x230  I64DivMod.o [45]
+  .text              ro code  0x1008'4da0     0x6  abort.o [43]
+  .text              ro code  0x1008'4da8     0x2  I64DivZer.o [45]
+  .text              ro code  0x1008'4dac    0x14  exit.o [46]
+  .text              ro code  0x1008'4dc0   0xc28  zf_driver_spi.o [42]
+  .text              ro code  0x1008'59e8   0x45c  zf_common_debug.o [39]
+  .text              ro code  0x1008'5e44   0x198  cy_gpio.o [11]
+  .text              ro code  0x1008'5fdc   0x1f0  cy_scb_spi.o [20]
+  .text              ro code  0x1008'61cc   0x7f4  zf_driver_uart.o [42]
+  .text              ro code  0x1008'69c0    0x40  sprintf.o [43]
+  .text              ro code  0x1008'6a00   0x200  zf_common_fifo.o [39]
+  .text              ro code  0x1008'6c00    0xe2  zf_common_interrupt.o [39]
+  .text              ro code  0x1008'6ce4   0x314  cy_scb_uart.o [20]
+  .text              ro code  0x1008'6ff8   0x66c  zf_driver_pwm.o [42]
+  .text              ro code  0x1008'7664    0x5c  cy_sysint.o [29]
+  .text              ro code  0x1008'76c0   0x20e  cy_tcpwm_pwm.o [36]
+  .text              ro code  0x1008'78ce     0xc  cy_tcpwm.o [36]
+  .text              ro code  0x1008'78dc   0xa14  zf_device_ips200.o [41]
+  .text              ro code  0x1008'82f0   0x17c  zf_driver_gpio.o [42]
+  .text              ro code  0x1008'846c   0x220  zf_driver_delay.o [42]
+  .text              ro code  0x1008'868c   0x1be  cy_tcpwm_counter.o [36]
+  .text              ro code  0x1008'884c   0x860  zf_device_config_mt9v03x.o [47]
+  .text              ro code  0x1008'90ac   0x5fc  zf_driver_soft_iic.o [42]
+  .text              ro code  0x1008'96a8   0x710  imu.o [4]
+  .text              ro code  0x1008'9db8    0x22  S32ToDbl.o [44]
+  .text              ro code  0x1008'9ddc    0x68  DblToFlt.o [44]
+  .text              ro code  0x1008'9e44    0x48  FltToDbl.o [44]
+  .text              ro code  0x1008'9e8c   0x102  sqrt.o [44]
+  .text              ro code  0x1008'9f90    0x22  math_wrappers64.o [44]
+  .text              ro code  0x1008'9fb4   0x100  asin64.o [44]
+  .text              ro code  0x1008'a0b4   0x174  atan2_64.o [44]
+  .text              ro code  0x1008'a228    0x34  DblCmpLe.o [44]
+  .text              ro code  0x1008'a25c   0x1c8  iar_Atan64.o [44]
+  .text              ro code  0x1008'a424    0x20  DblCmpEq.o [44]
+  .text              ro code  0x1008'a444    0x34  DblCmpGe.o [44]
+  .text              ro code  0x1008'a478   0x678  cy_sysclk.o [27]
+  .text              ro code  0x1008'aaf0    0x70  strncpy.o [45]
+  .text              ro code  0x1008'ab60    0xac  cy_syslib.o [30]
+  .text              ro code  0x1008'ac0c     0x2  cy_syslib.o [30]
+  .rodata            const    0x1008'ac10   0x5f0  zf_common_font.o [39]
+  .text              ro code  0x1008'b200   0x4d0  cy_flash.o [9]
+  .text              ro code  0x1008'b6d0   0x2ec  cy_srom.o [24]
+  .text              ro code  0x1008'b9bc    0x60  cy_ipc_drv.o [12]
+  .text              ro code  0x1008'ba1c   0x3a4  zf_driver_encoder.o [42]
+  .text              ro code  0x1008'bdc0     0x8  cy_tcpwm_quaddec.o [36]
+  .text              ro code  0x1008'bdc8   0x2f8  zf_driver_pit.o [42]
+  .text              ro code  0x1008'c0c0   0x2dc  cy_mw_flash.o [10]
+  .text              ro code  0x1008'c39c   0x288  zf_device_mt9v03x.o [41]
+  .text              ro code  0x1008'c624   0x258  zf_device_imu660ra.o [41]
+  .rodata            const    0x1008'c87c   0x228  zf_common_font.o [39]
+  .text              ro code  0x1008'caa4   0x1e8  ins.o [4]
+  .text              ro code  0x1008'cc8c    0x28  printf.o [43]
+  .text              ro code  0x1008'ccb4   0x1d8  zf_driver_flash.o [42]
+  .text              ro code  0x1008'ce8c   0x1d0  motor.o [4]
+  .text              ro code  0x1008'd05c   0x198  cy_interrupt_map.o [19]
+  .text              ro code  0x1008'd1f4   0x170  startup.o [25]
+  .text              ro code  0x1008'd364    0xec  system_tviibe4m_cm4.o [18]
+  .text              ro code  0x1008'd450     0x8  startup_cm4.o [25]
+  .text              ro code  0x1008'd458     0x6  startup_cm4.o [25]
+  .text              ro code  0x1008'd460   0x130  cm4_isr.o [38]
+  .text              ro code  0x1008'd590    0x50  enconder.o [4]
+  .text              ro code  0x1008'd5e0    0xb0  zf_device_wireless_uart.o [41]
+  .text              ro code  0x1008'd690    0xb8  vofa_function.o [4]
+  .text              ro code  0x1008'd748    0x28  zf_device_type.o [41]
+  .text              ro code  0x1008'd770    0x3a  base_transfer.o [4]
+  .text              ro code  0x1008'd7aa    0x26  vofa_uart.o [4]
+  .text              ro code  0x1008'd7d0   0x110  main_cm4.o [38]
+  .text              ro code  0x1008'd8e0    0x1c  zf_common_clock.o [39]
+  .text              ro code  0x1008'd8fc    0xb4  key.o [4]
+  .rodata            const    0x1008'd9b0    0x60  cy_sysclk.o [27]
+  .rodata            const    0x1008'da10    0x60  cy_sysclk.o [27]
+  .rodata            const    0x1008'da70    0x60  system_tviibe4m_cm4.o [18]
+  .rodata            const    0x1008'dad0    0x5c  cy_srom.o [24]
+  .rodata            const    0x1008'db2c    0x58  cy_mw_flash.o [10]
+  .rodata            const    0x1008'db84    0x50  zf_device_imu660ra.o [41]
+  .rodata            const    0x1008'dbd4    0x50  zf_device_ips200.o [41]
+  .rodata            const    0x1008'dc24    0x50  zf_driver_encoder.o [42]
+  .rodata            const    0x1008'dc74    0x50  zf_driver_flash.o [42]
+  .rodata            const    0x1008'dcc4    0x50  zf_driver_soft_iic.o [42]
+  .rodata            const    0x1008'dd14    0x4c  zf_common_fifo.o [39]
+  .rodata            const    0x1008'dd60    0x4c  zf_driver_pwm.o [42]
+  .rodata            const    0x1008'ddac    0x4c  zf_driver_spi.o [42]
+  .rodata            const    0x1008'ddf8    0x4c  zf_driver_uart.o [42]
+  .text              ro code  0x1008'de44    0x44  startup_cm4.o [25]
+  .rodata            const    0x1008'de88    0x40  iar_Atan64.o [44]
+  .text              ro code  0x1008'dec8    0x38  zero_init3.o [45]
+  .rodata            const    0x1008'df00    0x28  zf_device_mt9v03x.o [41]
+  .text              ro code  0x1008'df28    0x28  data_init.o [45]
+  .text              ro code  0x1008'df50    0x22  fpinit_M.o [44]
+  .iar.init_table    const    0x1008'df74    0x20  - Linker created -
+  .text              ro code  0x1008'df94    0x20  startup_cm4.o [25]
+  .text              ro code  0x1008'dfb4    0x20  putchar.o [43]
+  .text              ro code  0x1008'dfe0    0x1e  cy_syslib_iar.o [30]
+  .text              ro code  0x1008'e000    0x1e  cmain.o [45]
+  .text              ro code  0x1008'e020     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e024     0x4  exit.o [43]
+  .text              ro code  0x1008'e028     0xa  cexit.o [45]
+  .rodata            const    0x1008'e034    0x1c  zf_common_debug.o [39]
+  .rodata            const    0x1008'e050    0x1c  zf_device_imu660ra.o [41]
+  .text              ro code  0x1008'e06c    0x1c  startup_cm4.o [25]
+  .text              ro code  0x1008'e088    0x1c  cstartup_M.o [45]
+  .rodata            const    0x1008'e0a4    0x18  system_tviibe4m_cm4.o [18]
+  .rodata            const    0x1008'e0bc    0x18  zf_common_debug.o [39]
+  .rodata            const    0x1008'e0d4    0x18  zf_device_imu660ra.o [41]
+  .text              ro code  0x1008'e0ec    0x16  xprout.o [43]
+  .rodata            const    0x1008'e104    0x14  cy_flash.o [9]
+  .rodata            const    0x1008'e118    0x10  zf_common_debug.o [39]
+  .rodata            const    0x1008'e128    0x10  zf_common_debug.o [39]
+  .rodata            const    0x1008'e138     0xc  zf_common_debug.o [39]
+  .rodata            const    0x1008'e144     0xc  zf_common_debug.o [39]
+  .rodata            const    0x1008'e150     0xc  zf_common_debug.o [39]
+  .text              ro code  0x1008'e15c     0xc  cy_syslib.o [30]
+  .rodata            const    0x1008'e168     0x8  cy_mw_flash.o [10]
+  .rodata            const    0x1008'e170     0x8  cy_srom.o [24]
+  .rodata            const    0x1008'e178     0x8  ins.o [4]
+  .rodata            const    0x1008'e180     0x8  startup.o [25]
+  .rodata            const    0x1008'e188     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e18c     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e190     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e194     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e198     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e19c     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e1a0     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e1a4     0x4  cy_interrupt_map.o [19]
+  .rodata            const    0x1008'e1a8     0x4  cy_ipc_drv.o [12]
+  .rodata            const    0x1008'e1ac     0x4  cy_scb_spi.o [20]
+  .rodata            const    0x1008'e1b0     0x4  cy_scb_spi.o [20]
+  .rodata            const    0x1008'e1b4     0x4  cy_scb_spi.o [20]
+  .rodata            const    0x1008'e1b8     0x4  cy_scb_spi.o [20]
+  .rodata            const    0x1008'e1bc     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1c0     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1c4     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1c8     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1cc     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1d0     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1d4     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1d8     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1dc     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1e0     0x4  cy_scb_uart.o [20]
+  .rodata            const    0x1008'e1e4     0x4  cy_srom.o [24]
+  .rodata            const    0x1008'e1e8     0x4  cy_srom.o [24]
+  .rodata            const    0x1008'e1ec     0x4  cy_sysint.o [29]
+  .rodata            const    0x1008'e1f0     0x4  cy_tcpwm_counter.o [36]
+  .rodata            const    0x1008'e1f4     0x4  cy_tcpwm_counter.o [36]
+  .rodata            const    0x1008'e1f8     0x4  cy_tcpwm_counter.o [36]
+  .rodata            const    0x1008'e1fc     0x4  cy_tcpwm_counter.o [36]
+  .rodata            const    0x1008'e200     0x4  cy_tcpwm_counter.o [36]
+  .rodata            const    0x1008'e204     0x4  cy_tcpwm_pwm.o [36]
+  .rodata            const    0x1008'e208     0x4  cy_tcpwm_pwm.o [36]
+  .rodata            const    0x1008'e20c     0x4  cy_tcpwm_pwm.o [36]
+  .rodata            const    0x1008'e210     0x4  cy_tcpwm_pwm.o [36]
+  .rodata            const    0x1008'e214     0x4  cy_tcpwm_pwm.o [36]
+  .rodata            const    0x1008'e218     0x4  cy_tcpwm_pwm.o [36]
+  .rodata            const    0x1008'e21c     0x4  cy_tcpwm_pwm.o [36]
+  .text              ro code  0x1008'e220     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e224     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e228     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e22c     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e230     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e234     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e238     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e23c     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e240     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e244     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e248     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e24c     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e250     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e254     0x4  startup_cm4.o [25]
+  .text              ro code  0x1008'e258     0x4  startup_cm4.o [25]
+  .rodata            const    0x1008'e25c     0x0  zero_init3.o [45]
+  .rodata            const    0x1008'e25c     0x0  lz77_init_single.o [45]
+  Initializer bytes  const    0x1008'e25c    0xd2  <for P2-1>
+                            - 0x1008'e32e  0xe2ae
+
+Unused ranges:
+
+         From           To       Size
+         ----           --       ----
+   0x802'0000   0x802'0657      0x658
+   0x802'6258   0x802'63ff      0x1a8
+   0x802'6480   0x807'dfff   0x5'7b80
+  0x1008'e3ca  0x1040'ffff  0x38'1c36
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x3eff:
+           0x802'2358  0x3eff
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0xd2 (11% of destination):
+          0x1008'e25c    0xd2
+    1 destination range, total size 0x6f8:
+           0x802'1c60   0x6f8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                      ro code  ro data  rw data  rw data
+                                                            (abs)
+    ------                      -------  -------  -------  -------
+command line/config:
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\adc_11722776235721520015.dir: [1]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\button_4990804375159372270.dir: [2]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\canfd_1800690984773873875.dir: [3]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir: [4]
+    base_transfer.o                  58
+    enconder.o                       80                 4
+    image.o                       4'424       10    6'498
+    imu.o                         1'808               337
+    ins.o                           488        8      502
+    key.o                           180
+    motor.o                         464                13
+    pid.o                           672               304
+    vofa_function.o                 184                60
+    vofa_uart.o                      38                 1
+    --------------------------------------------------------------
+    Total:                        8'396       18    7'719
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\cpu_15938736945165268644.dir: [5]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\crypto_1190170608956581615.dir: [6]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\dma_12106025507578611576.dir: [7]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\evtgen_3404189088603873129.dir: [8]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\flash_8529866181315662935.dir: [9]
+    cy_flash.o                    1'232       20
+    --------------------------------------------------------------
+    Total:                        1'232       20
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\flash_864493325053435817.dir: [10]
+    cy_mw_flash.o                   732       96        2
+    --------------------------------------------------------------
+    Total:                          732       96        2
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\gpio_3999404635324069351.dir: [11]
+    cy_gpio.o                       408
+    --------------------------------------------------------------
+    Total:                          408
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\ipc_10145506163450686023.dir: [12]
+    cy_ipc_drv.o                     96        4
+    --------------------------------------------------------------
+    Total:                           96        4
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\lin_18429031207028094880.dir: [13]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\lvd_6353935867039560245.dir: [14]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\mcwdt_4052485907822033969.dir: [15]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\mpu_5663187252346826382.dir: [16]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\prot_10722960861768657883.dir: [17]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\rev_b_4986922561640112550.dir: [18]
+    system_tviibe4m_cm4.o           236      120       20
+    --------------------------------------------------------------
+    Total:                          236      120       20
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\rev_b_6162237342861132223.dir: [19]
+    cy_interrupt_map.o              408      212    1'536
+    --------------------------------------------------------------
+    Total:                          408      212    1'536
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir: [20]
+    cy_scb_spi.o                    496       16
+    cy_scb_uart.o                   788       40
+    --------------------------------------------------------------
+    Total:                        1'284       56
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\semihosting_143864889731838620.dir: [21]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smartio_5451710003740070188.dir: [22]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smif_427648126384146252.dir: [23]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\srom_13018798572330080582.dir: [24]
+    cy_srom.o                       748      108       24
+    --------------------------------------------------------------
+    Total:                          748      108       24
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\startup_479057977785470282.dir: [25]
+    startup.o                       368        8
+    startup_cm4.o                   334               128
+    --------------------------------------------------------------
+    Total:                          702        8      128
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sw_timer_4215635015939382130.dir: [26]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysclk_16149231235676103872.dir: [27]
+    cy_sysclk.o                   1'656      192       25
+    --------------------------------------------------------------
+    Total:                        1'656      192       25
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysflt_12293435975120599261.dir: [28]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysint_7435970359207984181.dir: [29]
+    cy_sysint.o                      92        4
+    --------------------------------------------------------------
+    Total:                           92        4
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syslib_16330585751512546975.dir: [30]
+    cy_syslib.o                     186               140
+    cy_syslib_iar.o                  30
+    --------------------------------------------------------------
+    Total:                          216               140
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syspm_10887939769544754770.dir: [31]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysreset_14586141425677365288.dir: [32]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysrtc_10747768817563771611.dir: [33]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\systick_16016591671695740695.dir: [34]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syswdt_9118657615806274156.dir: [35]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir: [36]
+    cy_tcpwm.o                       12
+    cy_tcpwm_counter.o              446       20
+    cy_tcpwm_pwm.o                  526       28
+    cy_tcpwm_quaddec.o                8
+    --------------------------------------------------------------
+    Total:                          992       48
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\trigmux_9729677290734583340.dir: [37]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\user_8514941877209965082.dir: [38]
+    cm4_isr.o                       304
+    main_cm4.o                      272
+    --------------------------------------------------------------
+    Total:                          576
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir: [39]
+    zf_common_clock.o                28                 4
+    zf_common_debug.o             1'116      120      112
+    zf_common_fifo.o                512       76
+    zf_common_font.o                       2'072
+    zf_common_interrupt.o           226                 4
+    --------------------------------------------------------------
+    Total:                        1'882    2'268      120
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_components_14936052685886095442.dir: [40]
+    --------------------------------------------------------------
+    Total:
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir: [41]
+    zf_device_imu660ra.o            600      133       20
+    zf_device_ips200.o            2'580       81       14
+    zf_device_mt9v03x.o             648       40    5'642    5'644
+    zf_device_type.o                 40        1        5
+    zf_device_wireless_uart.o       176                89
+    --------------------------------------------------------------
+    Total:                        4'044      255    5'770    5'644
+
+D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir: [42]
+    zf_driver_delay.o               544        1        2
+    zf_driver_encoder.o             932       82       24
+    zf_driver_flash.o               472       80    2'049
+    zf_driver_gpio.o                380
+    zf_driver_pit.o                 760        7       60
+    zf_driver_pwm.o               1'644       76
+    zf_driver_soft_iic.o          1'532       80
+    zf_driver_spi.o               3'112       78       24
+    zf_driver_uart.o              2'036       81      336
+    --------------------------------------------------------------
+    Total:                       11'412      485    2'495
+
+dl7M_tln.a: [43]
+    abort.o                           6
+    exit.o                            4
+    printf.o                         40
+    putchar.o                        32
+    sprintf.o                        64
+    xfail_s.o                        64                 4
+    xprintflarge_nomb.o           3'346
+    xprout.o                         22
+    xsprout.o                        10
+    --------------------------------------------------------------
+    Total:                        3'588                 4
+
+m7M_tls.a: [44]
+    DblAddSub.o                     606
+    DblCmpEq.o                       32
+    DblCmpGe.o                       52
+    DblCmpLe.o                       52
+    DblDiv.o                        582
+    DblMul.o                        426
+    DblToFlt.o                      104
+    DblToS32.o                       54
+    DblToU32.o                       34
+    FltToDbl.o                       72
+    S32ToDbl.o                       34
+    U32ToDbl.o                       28
+    asin64.o                        256
+    atan2_64.o                      372
+    fpinit_M.o                       34
+    frexp.o                         112
+    iar_Atan64.o                    456       64
+    math_wrappers64.o                34
+    sqrt.o                          258
+    --------------------------------------------------------------
+    Total:                        3'598       64
+
+rt7M_tl.a: [45]
+    ABImemclr4.o                      6
+    ABImemcpy.o                     166
+    ABImemset.o                     102
+    ABImemset48.o                    50
+    I64DivMod.o                     560
+    I64DivZer.o                       2
+    cexit.o                          10
+    cmain.o                          30
+    cstartup_M.o                     28
+    data_init.o                      40
+    lz77_init_single.o              126
+    memchr.o                         88
+    strchr.o                         22
+    strlen.o                         54
+    strncpy.o                       112
+    zero_init3.o                     56
+    --------------------------------------------------------------
+    Total:                        1'452
+
+shb_l.a: [46]
+    exit.o                           20
+    --------------------------------------------------------------
+    Total:                           20
+
+zf_device_config.a: [47]
+    zf_device_config.o                     8'192
+    zf_device_config_mt9v03x.o    2'144                36
+    --------------------------------------------------------------
+    Total:                        2'144    8'192       36
+
+    Gaps                             54        8       20
+    Linker created                            32    8'192
+------------------------------------------------------------------
+    Grand Total:                 45'968   12'190   26'231    5'644
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base   0x1008'df74           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x1008'df94           --   Gb  - Linker created -
+?main                   0x1008'e001          Code  Gb  cmain.o [45]
+Abs                     0x1008'3551     0xc  Code  Gb  pid.o [4]
+Acc                      0x802'612c     0x8  Data  Gb  imu.o [4]
+Acc_out                  0x802'6134     0x8  Data  Gb  imu.o [4]
+Acc_x                    0x802'6060    0x14  Data  Gb  imu.o [4]
+Acc_y                    0x802'6074    0x14  Data  Gb  imu.o [4]
+Acc_z                    0x802'6088    0x14  Data  Gb  imu.o [4]
+Add_Line                0x1008'3045    0xda  Code  Gb  image.o [4]
+AngleOffset_Pit          0x802'6184     0x4  Data  Gb  imu.o [4]
+AngleOffset_Rol          0x802'6180     0x4  Data  Gb  imu.o [4]
+Att_Angle                0x802'6120     0xc  Data  Gb  imu.o [4]
+Benzene_flag1            0x802'6204     0x2  Data  Gb  image.o [4]
+Benzene_point_left       0x802'623f     0x1  Data  Gb  image.o [4]
+Benzene_point_right      0x802'6240     0x1  Data  Gb  image.o [4]
+Benzene_turn_flag_up     0x802'6202     0x2  Data  Gb  image.o [4]
+BusFault_Handler        0x1008'e229          Code  Wk  startup_cm4.o [25]
+CSTACK$$Base             0x807'e000           --   Gb  - Linker created -
+CSTACK$$Limit            0x808'0000           --   Gb  - Linker created -
+CopyVectorTable         0x1008'd315    0x34  Code  Lc  startup.o [25]
+CpuUserInt0_Handler     0x1008'd07b    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt10_Handler    0x1008'e245          Code  Wk  startup_cm4.o [25]
+CpuUserInt11_Handler    0x1008'e249          Code  Wk  startup_cm4.o [25]
+CpuUserInt12_Handler    0x1008'e24d          Code  Wk  startup_cm4.o [25]
+CpuUserInt13_Handler    0x1008'e251          Code  Wk  startup_cm4.o [25]
+CpuUserInt14_Handler    0x1008'e255          Code  Wk  startup_cm4.o [25]
+CpuUserInt15_Handler    0x1008'e259          Code  Wk  startup_cm4.o [25]
+CpuUserInt1_Handler     0x1008'd0a1    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt2_Handler     0x1008'd0c7    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt3_Handler     0x1008'd0ed    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt4_Handler     0x1008'd113    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt5_Handler     0x1008'd139    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt6_Handler     0x1008'd15f    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt7_Handler     0x1008'd185    0x26  Code  Gb  cy_interrupt_map.o [19]
+CpuUserInt8_Handler     0x1008'e23d          Code  Wk  startup_cm4.o [25]
+CpuUserInt9_Handler     0x1008'e241          Code  Wk  startup_cm4.o [25]
+Cy_DefaultUserHandler   0x1008'd079     0x2  Code  Gb  cy_interrupt_map.o [19]
+Cy_FlashHandler         0x1008'c133    0x34  Code  Lc  cy_mw_flash.o [10]
+Cy_FlashInit            0x1008'c167    0x3c  Code  Gb  cy_mw_flash.o [10]
+Cy_FlashSectorErase     0x1008'c1a3    0x7e  Code  Gb  cy_mw_flash.o [10]
+Cy_FlashWriteWork       0x1008'c2ad    0xbc  Code  Gb  cy_mw_flash.o [10]
+Cy_Flash_BlankCheck     0x1008'b5af    0xb4  Code  Gb  cy_flash.o [9]
+Cy_Flash_BoundsCheck    0x1008'b45d    0x24  Code  Gb  cy_flash.o [9]
+Cy_Flash_CallSromApiForFlashWrite
+                        0x1008'b235    0x6a  Code  Lc  cy_flash.o [9]
+Cy_Flash_EraseSector    0x1008'b53f    0x70  Code  Gb  cy_flash.o [9]
+Cy_Flash_IsWorkSmallSector
+                        0x1008'b3b3    0x40  Code  Gb  cy_flash.o [9]
+Cy_Flash_MainBoundsCheck
+                        0x1008'b3f3    0x6a  Code  Gb  cy_flash.o [9]
+Cy_Flash_ProcessOpcode  0x1008'b481    0xbe  Code  Gb  cy_flash.o [9]
+Cy_Flash_ProgramRow     0x1008'b29f    0xaa  Code  Gb  cy_flash.o [9]
+Cy_Flash_WorkBoundsCheck
+                        0x1008'b349    0x6a  Code  Gb  cy_flash.o [9]
+Cy_Flashc_GetMainBankMode
+                        0x1008'b211    0x10  Code  Lc  cy_flash.o [9]
+Cy_Flashc_GetWorkBankMode
+                        0x1008'b201    0x10  Code  Lc  cy_flash.o [9]
+Cy_Flashc_InvalidateFlashCacheBuffer
+                        0x1008'b221    0x14  Code  Lc  cy_flash.o [9]
+Cy_Flashc_InvalidateFlashCacheBuffer
+                        0x1008'c107    0x14  Code  Lc  cy_mw_flash.o [10]
+Cy_Flashc_MainWriteEnable
+                        0x1008'c11b     0xc  Code  Lc  cy_mw_flash.o [10]
+Cy_Flashc_WorkWriteEnable
+                        0x1008'c127     0xc  Code  Lc  cy_mw_flash.o [10]
+Cy_GPIO_ClearInterrupt  0x1008'5f17     0xe  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_Clr             0x1008'8305     0xa  Code  Lc  zf_driver_gpio.o [42]
+Cy_GPIO_Pin_Init        0x1008'5f5b    0x74  Code  Gb  cy_gpio.o [11]
+Cy_GPIO_Read            0x1008'82f1     0xa  Code  Lc  zf_driver_gpio.o [42]
+Cy_GPIO_Set             0x1008'82fb     0xa  Code  Lc  zf_driver_gpio.o [42]
+Cy_GPIO_Set             0x1008'6303     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_GPIO_SetDriveSel     0x1008'5ef9    0x1e  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_SetDrivemode    0x1008'5ea9    0x1c  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_SetDrivemode    0x1008'830f    0x1c  Code  Lc  zf_driver_gpio.o [42]
+Cy_GPIO_SetHSIOM        0x1008'5e45    0x4c  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_SetInterruptEdge
+                        0x1008'5f3f    0x1c  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_SetInterruptMask
+                        0x1008'5f25    0x1a  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_SetSlewRate     0x1008'5edf    0x1a  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_SetVtrip        0x1008'5ec5    0x1a  Code  Lc  cy_gpio.o [11]
+Cy_GPIO_Write           0x1008'5e91    0x18  Code  Lc  cy_gpio.o [11]
+Cy_IPC_Drv_AcquireNotify
+                        0x1008'b9bd     0xc  Code  Lc  cy_ipc_drv.o [12]
+Cy_IPC_Drv_ClearInterrupt
+                        0x1008'b71b    0x14  Code  Lc  cy_srom.o [24]
+Cy_IPC_Drv_GetInterruptStatusMasked
+                        0x1008'b717     0x4  Code  Lc  cy_srom.o [24]
+Cy_IPC_Drv_GetIntrBaseAddr
+                        0x1008'b6d1    0x34  Code  Lc  cy_srom.o [24]
+Cy_IPC_Drv_IsLockAcquired
+                        0x1008'b72f     0x8  Code  Lc  cy_srom.o [24]
+Cy_IPC_Drv_LockAcquire  0x1008'b9d1    0x10  Code  Gb  cy_ipc_drv.o [12]
+Cy_IPC_Drv_SendMsgWord_2
+                        0x1008'b9e1    0x34  Code  Gb  cy_ipc_drv.o [12]
+Cy_IPC_Drv_SetInterruptMask
+                        0x1008'b705    0x12  Code  Lc  cy_srom.o [24]
+Cy_IPC_Drv_WriteData1Value
+                        0x1008'b9cd     0x4  Code  Lc  cy_ipc_drv.o [12]
+Cy_IPC_Drv_WriteDataValue
+                        0x1008'b9c9     0x4  Code  Lc  cy_ipc_drv.o [12]
+Cy_RestoreIRQ           0x1008'd459          Code  Gb  startup_cm4.o [25]
+Cy_SCB_ClearRxFifo      0x1008'4dcb    0x1e  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_ClearRxInterrupt
+                        0x1008'6365     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_ClearTxInterrupt
+                        0x1008'637b     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_GetFifoSize      0x1008'4e25    0x12  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_GetNumInRxFifo   0x1008'4dc1     0xa  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_GetNumInRxFifo   0x1008'6313     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_GetNumInTxFifo   0x1008'4def     0xa  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_GetNumInTxFifo   0x1008'6323     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_GetRxInterruptMask
+                        0x1008'635f     0x6  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_GetTxInterruptMask
+                        0x1008'6375     0x6  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_GetTxSrValid     0x1008'4df9     0xa  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_GetTxSrValid     0x1008'632d     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_IsTxComplete     0x1008'4e03    0x22  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_IsTxComplete     0x1008'6337    0x22  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_ReadRxFifo       0x1008'630d     0x6  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_SPI_ClearRxFifo  0x1008'4e55     0x8  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_SPI_Enable       0x1008'4e37     0xa  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_SPI_GetNumInRxFifo
+                        0x1008'4e4d     0x8  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_SPI_Init         0x1008'5fdd   0x1d8  Code  Gb  cy_scb_spi.o [20]
+Cy_SCB_SPI_SetActiveSlaveSelect
+                        0x1008'4e41     0xc  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_SetRxInterruptMask
+                        0x1008'6359     0x6  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_SetTxInterruptMask
+                        0x1008'636f     0x6  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_UART_DeInit      0x1008'6f69    0x5c  Code  Gb  cy_scb_uart.o [20]
+Cy_SCB_UART_Enable      0x1008'6385     0xa  Code  Lc  zf_driver_uart.o [42]
+Cy_SCB_UART_Init        0x1008'6ce5   0x284  Code  Gb  cy_scb_uart.o [20]
+Cy_SCB_WriteTxFifo      0x1008'4de9     0x6  Code  Lc  zf_driver_spi.o [42]
+Cy_SCB_WriteTxFifo      0x1008'631d     0x6  Code  Lc  zf_driver_uart.o [42]
+Cy_SaveIRQ              0x1008'd451          Code  Gb  startup_cm4.o [25]
+Cy_Srom_CallApi         0x1008'b737    0xb8  Code  Gb  cy_srom.o [24]
+Cy_Srom_CallApi_NonBlock
+                        0x1008'b7ef    0x66  Code  Gb  cy_srom.o [24]
+Cy_Srom_ConvertRespToStatus
+                        0x1008'b8bb    0x1e  Code  Gb  cy_srom.o [24]
+Cy_Srom_GetApiResponse  0x1008'b885    0x36  Code  Gb  cy_srom.o [24]
+Cy_Srom_GetResponseType
+                        0x1008'b855    0x30  Code  Gb  cy_srom.o [24]
+Cy_Srom_ISR_ResponseIPC
+                        0x1008'b935    0x58  Code  Lc  cy_srom.o [24]
+Cy_Srom_SetResponseHandler
+                        0x1008'b8d9    0x5a  Code  Gb  cy_srom.o [24]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'c39d    0x34  Code  Lc  zf_device_mt9v03x.o [41]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'846d    0x34  Code  Lc  zf_driver_delay.o [42]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'ba1d    0x34  Code  Lc  zf_driver_encoder.o [42]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'bdc9    0x34  Code  Lc  zf_driver_pit.o [42]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'6ff9    0x34  Code  Lc  zf_driver_pwm.o [42]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'4e5d    0x34  Code  Lc  zf_driver_spi.o [42]
+Cy_SysClk_CheckDividerExisting
+                        0x1008'61cd    0x34  Code  Lc  zf_driver_uart.o [42]
+Cy_SysClk_ClkPathGetSource
+                        0x1008'a58f    0x54  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_EcoGetStatus  0x1008'a479    0x1a  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_FastClkGetDivider
+                        0x1008'a583     0xc  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_FllGetConfiguration
+                        0x1008'a5e3    0x7e  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_FllGetLockStatus
+                        0x1008'a493     0xc  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_GetCoreFrequency
+                        0x1008'aac3     0x8  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetEcoFrequency
+                        0x1008'a72d    0x32  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetExtFrequency
+                        0x1008'a761    0x1e  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetFastFrequency
+                        0x1008'aa95    0x2e  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetFllInputFrequency
+                        0x1008'a889     0xc  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetFllOutputFrequency
+                        0x1008'a8b1    0x78  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetHfClkFrequency
+                        0x1008'aa1b    0x7a  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetIlo0Frequency
+                        0x1008'a781    0x32  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetIlo1Frequency
+                        0x1008'a7b3    0x32  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetImoFrequency
+                        0x1008'a6fb    0x32  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetPathFrequency
+                        0x1008'a9e9    0x32  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetPathSourceFrequency
+                        0x1008'a825    0x64  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetPllInputFrequency
+                        0x1008'a895    0x1c  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetPllNo      0x1008'a4a1    0x14  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_GetPllOutputFrequency
+                        0x1008'a929    0xba  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_GetWcoFrequency
+                        0x1008'a7e5    0x32  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_HfClockGetDivider
+                        0x1008'a541    0x42  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_HfClockGetSource
+                        0x1008'a4ed    0x54  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_InitGetFreqParams
+                        0x1008'a6e1    0x1a  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'c437    0x38  Code  Lc  zf_device_mt9v03x.o [41]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'8507    0x38  Code  Lc  zf_driver_delay.o [42]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'babb    0x3a  Code  Lc  zf_driver_encoder.o [42]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'be63    0x38  Code  Lc  zf_driver_pit.o [42]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'7097    0x3a  Code  Lc  zf_driver_pwm.o [42]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'4f1d    0x3a  Code  Lc  zf_driver_spi.o [42]
+Cy_SysClk_PeriphAssignDivider
+                        0x1008'628d    0x3a  Code  Lc  zf_driver_uart.o [42]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'c46f    0x3a  Code  Lc  zf_device_mt9v03x.o [41]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'853f    0x3a  Code  Lc  zf_driver_delay.o [42]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'baf5    0x3c  Code  Lc  zf_driver_encoder.o [42]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'be9b    0x3a  Code  Lc  zf_driver_pit.o [42]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'70d1    0x3c  Code  Lc  zf_driver_pwm.o [42]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'4f57    0x3c  Code  Lc  zf_driver_spi.o [42]
+Cy_SysClk_PeriphEnableDivider
+                        0x1008'62c7    0x3c  Code  Lc  zf_driver_uart.o [42]
+Cy_SysClk_PeriphSetDivider
+                        0x1008'c3d1    0x66  Code  Lc  zf_device_mt9v03x.o [41]
+Cy_SysClk_PeriphSetDivider
+                        0x1008'84a1    0x66  Code  Lc  zf_driver_delay.o [42]
+Cy_SysClk_PeriphSetDivider
+                        0x1008'ba51    0x6a  Code  Lc  zf_driver_encoder.o [42]
+Cy_SysClk_PeriphSetDivider
+                        0x1008'bdfd    0x66  Code  Lc  zf_driver_pit.o [42]
+Cy_SysClk_PeriphSetDivider
+                        0x1008'702d    0x6a  Code  Lc  zf_driver_pwm.o [42]
+Cy_SysClk_PeriphSetFracDivider
+                        0x1008'4e91    0x8c  Code  Lc  zf_driver_spi.o [42]
+Cy_SysClk_PeriphSetFracDivider
+                        0x1008'6201    0x8c  Code  Lc  zf_driver_uart.o [42]
+Cy_SysClk_PllGetConfiguration
+                        0x1008'a675    0x48  Code  Gb  cy_sysclk.o [27]
+Cy_SysClk_PllGetLockStatus
+                        0x1008'a4b5    0x28  Code  Lc  cy_sysclk.o [27]
+Cy_SysClk_WcoOkay       0x1008'a4dd     0xe  Code  Lc  cy_sysclk.o [27]
+Cy_SysInt_InitIRQ       0x1008'7665    0x38  Code  Gb  cy_sysint.o [29]
+Cy_SysInt_SetSystemIrqVector
+                        0x1008'769d    0x12  Code  Gb  cy_sysint.o [29]
+Cy_SysInt_SystemIrqUserTableRamPointer
+                         0x802'225c     0x4  Data  Gb  cy_interrupt_map.o [19]
+Cy_SysLib_CleanCoreDCacheByAddr
+                        0x1008'ac0b     0x2  Code  Gb  cy_syslib.o [30]
+Cy_SysLib_DelayCycles   0x1008'dfe1          Code  Gb  cy_syslib_iar.o [30]
+Cy_SysLib_EnterCriticalSection
+                        0x1008'dff1          Code  Gb  cy_syslib_iar.o [30]
+Cy_SysLib_ExitCriticalSection
+                        0x1008'dff9          Code  Gb  cy_syslib_iar.o [30]
+Cy_SysLib_FaultHandler  0x1008'ab65    0x90  Code  Gb  cy_syslib.o [30]
+Cy_SysLib_Halt          0x1008'ab61     0x4  Code  Gb  cy_syslib.o [30]
+Cy_SysLib_InvalidateCoreDCacheByAddr
+                        0x1008'ac09     0x2  Code  Gb  cy_syslib.o [30]
+Cy_SysLib_ProcessingFault
+                        0x1008'ac0d     0x2  Code  Wk  cy_syslib.o [30]
+Cy_SysLib_SvcHandler    0x1008'e15d     0xc  Code  Wk  cy_syslib.o [30]
+Cy_SystemInitFpuEnable  0x1008'd401    0x1e  Code  Gb  system_tviibe4m_cm4.o [18]
+Cy_SystemIrqUserTable    0x802'1c60   0x5fc  Data  Gb  cy_interrupt_map.o [19]
+Cy_Tcpwm_Counter_ClearTC_Intr
+                        0x1008'883b    0x10  Code  Gb  cy_tcpwm_counter.o [36]
+Cy_Tcpwm_Counter_Enable
+                        0x1008'881d     0xa  Code  Gb  cy_tcpwm_counter.o [36]
+Cy_Tcpwm_Counter_GetCounter
+                        0x1008'882b     0x4  Code  Gb  cy_tcpwm_counter.o [36]
+Cy_Tcpwm_Counter_Init   0x1008'868d   0x17c  Code  Gb  cy_tcpwm_counter.o [36]
+Cy_Tcpwm_Counter_SetCounter
+                        0x1008'8827     0x4  Code  Gb  cy_tcpwm_counter.o [36]
+Cy_Tcpwm_Counter_SetTC_IntrMask
+                        0x1008'882f     0xc  Code  Gb  cy_tcpwm_counter.o [36]
+Cy_Tcpwm_Pwm_Enable     0x1008'78c5     0xa  Code  Gb  cy_tcpwm_pwm.o [36]
+Cy_Tcpwm_Pwm_Init       0x1008'76c1   0x1e8  Code  Gb  cy_tcpwm_pwm.o [36]
+Cy_Tcpwm_QuadDec_GetCounter
+                        0x1008'bdc5     0x4  Code  Gb  cy_tcpwm_quaddec.o [36]
+Cy_Tcpwm_QuadDec_SetCounter
+                        0x1008'bdc1     0x4  Code  Gb  cy_tcpwm_quaddec.o [36]
+Cy_Tcpwm_TriggerStart   0x1008'78cf     0xc  Code  Gb  cy_tcpwm.o [36]
+Cy_WorkFlashBlankCheck  0x1008'c221    0x8c  Code  Gb  cy_mw_flash.o [10]
+Cy_u32StartupStackEndAddress
+                        0x1008'de84          Data  Gb  startup_cm4.o [25]
+Cy_u32StartupStackStartAddress
+                        0x1008'de80          Data  Gb  startup_cm4.o [25]
+DebugMon_Handler        0x1008'e231          Code  Wk  startup_cm4.o [25]
+Get_conder              0x1008'd5b3    0x26  Code  Gb  enconder.o [4]
+Gyro                     0x802'613c     0x8  Data  Gb  imu.o [4]
+Gyro_x                   0x802'609c    0x14  Data  Gb  imu.o [4]
+Gyro_y                   0x802'60b0    0x14  Data  Gb  imu.o [4]
+Gyro_z                   0x802'60c4    0x14  Data  Gb  imu.o [4]
+HEAP_STACK$$Base         0x807'e000           --   Gb  - Linker created -
+HEAP_STACK$$Limit        0x808'0000           --   Gb  - Linker created -
+HardFault_Handler       0x1008'df95          Code  Wk  startup_cm4.o [25]
+IMUupdate               0x1008'98bd   0x3e8  Code  Gb  imu.o [4]
+Image_Binarization      0x1008'219f    0x90  Code  Gb  image.o [4]
+IncrementalPID_L        0x1008'331d    0xb0  Code  Gb  pid.o [4]
+IncrementalPID_R        0x1008'33cd    0xb0  Code  Gb  pid.o [4]
+InitRamEcc              0x1008'd205    0xfe  Code  Lc  startup.o [25]
+InitRamEccClearArea     0x1008'd303    0x12  Code  Lc  startup.o [25]
+JustFloat_Data           0x802'5fc4    0x24  Data  Gb  vofa_function.o [4]
+KEY_INIT                0x1008'd8fd    0x34  Code  Gb  key.o [4]
+Key_Get                 0x1008'd931    0x80  Code  Gb  key.o [4]
+MemManage_Handler       0x1008'e225          Code  Wk  startup_cm4.o [25]
+NMI_Handler             0x1008'e221          Code  Wk  startup_cm4.o [25]
+PID_Init                0x1008'32bd    0x5e  Code  Gb  pid.o [4]
+PendSV_Handler          0x1008'e235          Code  Wk  startup_cm4.o [25]
+Position_PID            0x1008'347d    0x9e  Code  Gb  pid.o [4]
+Prepare_Data            0x1008'9817    0x9e  Code  Gb  imu.o [4]
+Prepare_Data::ACC_X_BUF
+                         0x802'5f4c    0x28  Data  Lc  imu.o [4]
+Prepare_Data::ACC_Y_BUF
+                         0x802'5f74    0x28  Data  Lc  imu.o [4]
+Prepare_Data::ACC_Z_BUF
+                         0x802'5f9c    0x28  Data  Lc  imu.o [4]
+Prepare_Data::filter_cnt
+                         0x802'6245     0x1  Data  Lc  imu.o [4]
+Region$$Table$$Base     0x1008'df74           --   Gb  - Linker created -
+Region$$Table$$Limit    0x1008'df94           --   Gb  - Linker created -
+Reset_Handler           0x1008'de45          Code  Wk  startup_cm4.o [25]
+SVC_Handler             0x1008'e06d          Code  Wk  startup_cm4.o [25]
+Startup_Init            0x1008'd1f5    0x10  Code  Gb  startup.o [25]
+SysTick_Handler         0x1008'e239          Code  Wk  startup_cm4.o [25]
+SystemCoreClock          0x802'61b8     0x4  Data  Gb  system_tviibe4m_cm4.o [18]
+SystemCoreClockUpdate   0x1008'd36d    0x94  Code  Gb  system_tviibe4m_cm4.o [18]
+SystemInit              0x1008'd365     0x8  Code  Gb  system_tviibe4m_cm4.o [18]
+UsageFault_Handler      0x1008'e22d          Code  Wk  startup_cm4.o [25]
+_LC                     0x1008'39f1     0x6  Code  Lc  xprintflarge_nomb.o [43]
+_LitobLargeNoMb         0x1008'44fb   0x114  Code  Lc  xprintflarge_nomb.o [43]
+_PrintfLargeNoMb        0x1008'39f7   0xafe  Code  Gb  xprintflarge_nomb.o [43]
+_Prout                  0x1008'e0ed    0x16  Code  Gb  xprout.o [43]
+_PutcharsLargeNoMb      0x1008'4669    0x2e  Code  Lc  xprintflarge_nomb.o [43]
+_SProut                 0x1008'32b3     0xa  Code  Gb  xsprout.o [43]
+__NVIC_ClearPendingIRQ  0x1008'd05d    0x1c  Code  Lc  cy_interrupt_map.o [19]
+__NVIC_ClearPendingIRQ  0x1008'6c1d    0x1c  Code  Lc  zf_common_interrupt.o [39]
+__NVIC_EnableIRQ        0x1008'c0c1    0x1e  Code  Lc  cy_mw_flash.o [10]
+__NVIC_EnableIRQ        0x1008'6c01    0x1c  Code  Lc  zf_common_interrupt.o [39]
+__NVIC_SetPriority      0x1008'c0df    0x28  Code  Lc  cy_mw_flash.o [10]
+__NVIC_SetPriority      0x1008'6c39    0x24  Code  Lc  zf_common_interrupt.o [39]
+__Vectors               0x1008'0000           --   Gb  startup_cm4.o [25]
+__Vectors_End           0x1008'0080          Data  Gb  startup_cm4.o [25]
+__Vectors_Size {Abs}           0x80           --   Gb  startup_cm4.o [25]
+__aeabi_cdcmpeq         0x1008'a425          Code  Gb  DblCmpEq.o [44]
+__aeabi_cdcmple         0x1008'a229          Code  Gb  DblCmpLe.o [44]
+__aeabi_cdrcmple        0x1008'a445          Code  Gb  DblCmpGe.o [44]
+__aeabi_d2f             0x1008'9ddd          Code  Gb  DblToFlt.o [44]
+__aeabi_d2iz            0x1008'3985          Code  Gb  DblToS32.o [44]
+__aeabi_d2uiz           0x1008'4b4d          Code  Gb  DblToU32.o [44]
+__aeabi_dadd            0x1008'3725          Code  Gb  DblAddSub.o [44]
+__aeabi_ddiv            0x1008'4905          Code  Gb  DblDiv.o [44]
+__aeabi_dmul            0x1008'3579          Code  Gb  DblMul.o [44]
+__aeabi_dsub            0x1008'38a1          Code  Gb  DblAddSub.o [44]
+__aeabi_f2d             0x1008'9e45          Code  Gb  FltToDbl.o [44]
+__aeabi_i2d             0x1008'9db9          Code  Gb  S32ToDbl.o [44]
+__aeabi_ldiv0           0x1008'4da9          Code  Gb  I64DivZer.o [45]
+__aeabi_memclr4         0x1008'32ad          Code  Gb  ABImemclr4.o [45]
+__aeabi_memcpy          0x1008'47ed          Code  Gb  ABImemcpy.o [45]
+__aeabi_memcpy4         0x1008'480d          Code  Gb  ABImemcpy.o [45]
+__aeabi_memcpy8         0x1008'480d          Code  Gb  ABImemcpy.o [45]
+__aeabi_memset          0x1008'31c9          Code  Gb  ABImemset.o [45]
+__aeabi_ui2d            0x1008'355d          Code  Gb  U32ToDbl.o [44]
+__aeabi_uldivmod        0x1008'4b71          Code  Gb  I64DivMod.o [45]
+__cmain                 0x1008'e001          Code  Gb  cmain.o [45]
+__ecc_init_sram_end_address {Abs}
+                         0x807'ffff          Data  Gb  <internal module>
+__ecc_init_sram_start_address {Abs}
+                         0x802'0000          Data  Gb  <internal module>
+__exit                  0x1008'4dad    0x14  Code  Gb  exit.o [46]
+__iar_Atan64            0x1008'a25d   0x1c8  Code  Gb  iar_Atan64.o [44]
+__iar_Fail_s            0x1008'471d    0x1c  Code  Gb  xfail_s.o [43]
+__iar_Memchr            0x1008'4795          Code  Gb  memchr.o [45]
+__iar_Memset            0x1008'31c9          Code  Gb  ABImemset.o [45]
+__iar_Memset4_word      0x1008'39bd          Code  Gb  ABImemset48.o [45]
+__iar_Memset8_word      0x1008'39bd          Code  Gb  ABImemset48.o [45]
+__iar_Memset_word       0x1008'31d1          Code  Gb  ABImemset.o [45]
+__iar_Strchr            0x1008'4705          Code  Gb  strchr.o [45]
+__iar_asin64            0x1008'9fb5    0xe4  Code  Gb  asin64.o [44]
+__iar_atan2_64          0x1008'a0b5   0x174  Code  Gb  atan2_64.o [44]
+__iar_data_init3        0x1008'df29    0x28  Code  Gb  data_init.o [45]
+__iar_frexp             0x1008'48a1          Code  Gb  frexp.o [44]
+__iar_frexpl            0x1008'48a1          Code  Gb  frexp.o [44]
+__iar_init_vfp          0x1008'df51          Code  Gb  fpinit_M.o [44]
+__iar_lz77_init_single3
+                        0x1008'322f    0x7e  Code  Gb  lz77_init_single.o [45]
+__iar_program_start     0x1008'e089          Code  Gb  cstartup_M.o [45]
+__iar_softfp___iar_frexp64
+                        0x1008'4895          Code  Gb  frexp.o [44]
+__iar_softfp_frexp      0x1008'4895          Code  Gb  frexp.o [44]
+__iar_softfp_frexpl     0x1008'4895          Code  Gb  frexp.o [44]
+__iar_sqrt64            0x1008'9e9d          Code  Gb  sqrt.o [44]
+__iar_vfp___iar_sqrt64  0x1008'9e8d          Code  Gb  sqrt.o [44]
+__iar_vfp_asin          0x1008'9f97     0xc  Code  Gb  math_wrappers64.o [44]
+__iar_vfp_atan2         0x1008'9fa3    0x10  Code  Gb  math_wrappers64.o [44]
+__iar_vfp_sqrt          0x1008'9e8d          Code  Gb  sqrt.o [44]
+__iar_vfp_sqrtl         0x1008'9e8d          Code  Gb  sqrt.o [44]
+__iar_zero_init3        0x1008'dec9    0x38  Code  Gb  zero_init3.o [45]
+__low_level_init        0x1008'e021          Code  Gb  startup_cm4.o [25]
+__ramVectors             0x802'6400          Data  Gb  startup_cm4.o [25]
+__vector_table          0x1008'0000          Data  Gb  startup_cm4.o [25]
+__vector_table_0x1c     0x1008'001c          Data  Gb  startup_cm4.o [25]
+__write                 0x1008'5d0d    0x12  Code  Gb  zf_common_debug.o [39]
+_call_main              0x1008'e00d          Code  Gb  cmain.o [45]
+_exit                   0x1008'e029          Code  Gb  cexit.o [45]
+a                       0x1008'de88    0x40  Data  Lc  iar_Atan64.o [44]
+abort                   0x1008'4da1     0x6  Code  Gb  abort.o [43]
+acc_x                    0x802'6174     0x4  Data  Gb  imu.o [4]
+acc_y                    0x802'6178     0x4  Data  Gb  imu.o [4]
+acc_z                    0x802'617c     0x4  Data  Gb  imu.o [4]
+angle_cir                0x802'229c     0x4  Data  Gb  image.o [4]
+ascii_font_6x8          0x1008'c87c   0x228  Data  Gb  zf_common_font.o [39]
+ascii_font_8x16         0x1008'ac10   0x5f0  Data  Gb  zf_common_font.o [39]
+asin                    0x1008'9fb5    0xe4  Code  Gb  asin64.o [44]
+asinl                   0x1008'9fb5    0xe4  Code  Gb  asin64.o [44]
+assert_interrupt_config
+                        0x1008'6c95     0xc  Code  Gb  zf_common_interrupt.o [39]
+atan2                   0x1008'a0b5   0x174  Code  Gb  atan2_64.o [44]
+atan2l                  0x1008'a0b5   0x174  Code  Gb  atan2_64.o [44]
+averageFilter           0x1008'9ca9    0x5e  Code  Gb  imu.o [4]
+b                        0x802'6160     0x4  Data  Gb  image.o [4]
+break_count              0x802'6249     0x1  Data  Gb  ins.o [4]
+camera_finish_callback  0x1008'c4a9    0x1e  Code  Gb  zf_device_mt9v03x.o [41]
+check_row                0x802'6243     0x1  Data  Gb  image.o [4]
+cir_out_encoder          0x802'6222     0x2  Data  Gb  image.o [4]
+cir_turn_left            0x802'621a     0x2  Data  Gb  image.o [4]
+cir_turn_right           0x802'621c     0x2  Data  Gb  image.o [4]
+circular                0x1008'2b51   0x454  Code  Gb  image.o [4]
+clock_init              0x1008'd8e1    0x16  Code  Gb  zf_common_clock.o [39]
+contral                 0x1008'cf61    0xc0  Code  Gb  motor.o [4]
+cs_pin_save              0x802'61d8     0x4  Data  Gb  zf_driver_spi.o [42]
+current_replay_page      0x802'2350     0x1  Data  Gb  ins.o [4]
+cy_assertFileName        0x802'6000    0x18  Data  Gb  cy_syslib.o [30]
+cy_assertLine            0x802'615c     0x4  Data  Gb  cy_syslib.o [30]
+cy_delay32kMs            0x802'61c8     0x4  Data  Gb  system_tviibe4m_cm4.o [18]
+cy_delayFreqHz           0x802'61bc     0x4  Data  Gb  system_tviibe4m_cm4.o [18]
+cy_delayFreqKhz          0x802'61c0     0x4  Data  Gb  system_tviibe4m_cm4.o [18]
+cy_delayFreqMhz          0x802'61c4     0x4  Data  Gb  system_tviibe4m_cm4.o [18]
+cy_faultFrame            0x802'5d30    0x70  Data  Gb  cy_syslib.o [30]
+debug_assert_handler    0x1008'5d1f    0x3c  Code  Gb  zf_common_debug.o [39]
+debug_assert_handler::assert_nest_index
+                         0x802'624f     0x1  Data  Lc  zf_common_debug.o [39]
+debug_delay             0x1008'59e9    0x36  Code  Lc  zf_common_debug.o [39]
+debug_info_init         0x1008'5dc5    0x18  Code  Gb  zf_common_debug.o [39]
+debug_init              0x1008'5ddd    0x2a  Code  Gb  zf_common_debug.o [39]
+debug_interrupr_handler
+                        0x1008'5ced    0x20  Code  Gb  zf_common_debug.o [39]
+debug_log_handler       0x1008'5d5b    0x20  Code  Gb  zf_common_debug.o [39]
+debug_output            0x1008'5a2b   0x2c2  Code  Lc  zf_common_debug.o [39]
+debug_output_info        0x802'60d8    0x14  Data  Lc  zf_common_debug.o [39]
+debug_output_init       0x1008'5d9b    0x2a  Code  Gb  zf_common_debug.o [39]
+debug_output_struct_init
+                        0x1008'5d7b    0x20  Code  Gb  zf_common_debug.o [39]
+debug_uart_buffer        0x802'5da0    0x40  Data  Gb  zf_common_debug.o [39]
+debug_uart_data          0x802'624e     0x1  Data  Gb  zf_common_debug.o [39]
+debug_uart_fifo          0x802'6030    0x18  Data  Gb  zf_common_debug.o [39]
+debug_uart_str_output   0x1008'5a1f     0xc  Code  Lc  zf_common_debug.o [39]
+delay_clk                0x802'2356     0x1  Data  Lc  zf_driver_delay.o [42]
+duanlu                  0x1008'2fbd    0x7c  Code  Gb  image.o [4]
+encoder_clear_count     0x1008'bc03    0x2e  Code  Gb  zf_driver_encoder.o [42]
+encoder_clk              0x802'22b0     0x4  Data  Gb  zf_driver_encoder.o [42]
+encoder_dir_init        0x1008'bc31   0x166  Code  Gb  zf_driver_encoder.o [42]
+encoder_get_count       0x1008'bba3    0x60  Code  Gb  zf_driver_encoder.o [42]
+encoder_init            0x1008'd591    0x22  Code  Gb  enconder.o [4]
+encoder_mode             0x802'61d4     0x4  Data  Lc  zf_driver_encoder.o [42]
+encoder_module           0x802'22b4    0x10  Data  Gb  zf_driver_encoder.o [42]
+end_check_row            0x802'234e     0x1  Data  Gb  image.o [4]
+exInt                    0x802'6194     0x4  Data  Gb  imu.o [4]
+exit                    0x1008'e025     0x4  Code  Gb  exit.o [43]
+eyInt                    0x802'6198     0x4  Data  Gb  imu.o [4]
+ezInt                    0x802'619c     0x4  Data  Gb  imu.o [4]
+fifo_head_offset        0x1008'6a01    0x1a  Code  Lc  zf_common_fifo.o [39]
+fifo_init               0x1008'6bbf    0x3a  Code  Gb  zf_common_fifo.o [39]
+fifo_write_buffer       0x1008'6a1b   0x1a4  Code  Gb  zf_common_fifo.o [39]
+find_mid_line_weight    0x1008'2809    0x96  Code  Gb  image.o [4]
+find_mid_line_weight::last_mid_line
+                         0x802'234f     0x1  Data  Lc  image.o [4]
+findline                0x1008'2235   0x5d4  Code  Gb  image.o [4]
+first_pos                0x802'6206     0x2  Data  Gb  image.o [4]
+flag1                    0x802'623c     0x1  Data  Gb  image.o [4]
+flag2                    0x802'623d     0x1  Data  Gb  image.o [4]
+flag3                    0x802'623e     0x1  Data  Gb  image.o [4]
+flag_left                0x802'61fe     0x2  Data  Gb  image.o [4]
+flag_right               0x802'6200     0x2  Data  Gb  image.o [4]
+flash_buffer_clear      0x1008'ce5f    0x12  Code  Gb  zf_driver_flash.o [42]
+flash_check             0x1008'ccb5    0x42  Code  Gb  zf_driver_flash.o [42]
+flash_erase_page        0x1008'ccf7    0x36  Code  Gb  zf_driver_flash.o [42]
+flash_init              0x1008'ce71    0x10  Code  Gb  zf_driver_flash.o [42]
+flash_init_flag          0x802'6256     0x1  Data  Lc  zf_driver_flash.o [42]
+flash_page               0x802'6248     0x1  Data  Gb  ins.o [4]
+flash_read_page_to_buffer
+                        0x1008'cdab    0x64  Code  Gb  zf_driver_flash.o [42]
+flash_union_buffer       0x802'4f68   0x800  Data  Gb  zf_driver_flash.o [42]
+flash_write_page        0x1008'cd2d    0x7e  Code  Gb  zf_driver_flash.o [42]
+flash_write_page_from_buffer
+                        0x1008'ce0f    0x50  Code  Gb  zf_driver_flash.o [42]
+float2uint8Array        0x1008'd771    0x3a  Code  Gb  base_transfer.o [4]
+g_NB_ModeEnabled         0x802'6239     0x1  Data  Lc  cy_mw_flash.o [10]
+g_completeFlag           0x802'6238     0x1  Data  Lc  cy_mw_flash.o [10]
+g_dummy                  0x802'6158     0x4  Data  Lc  cy_srom.o [24]
+g_scratch                0x802'6100    0x10  Data  Lc  cy_srom.o [24]
+get_ch1_hsiom           0x1008'bb57    0x26  Code  Lc  zf_driver_encoder.o [42]
+get_ch1_pin             0x1008'bb31    0x26  Code  Lc  zf_driver_encoder.o [42]
+get_ch2_pin             0x1008'bb7d    0x26  Code  Lc  zf_driver_encoder.o [42]
+get_error               0x1008'289f    0x14  Code  Gb  image.o [4]
+get_pwm_ch              0x1008'731d    0xfe  Code  Lc  zf_driver_pwm.o [42]
+get_pwm_pin             0x1008'710d   0x100  Code  Lc  zf_driver_pwm.o [42]
+get_pwm_pin_hsiom       0x1008'720d   0x110  Code  Lc  zf_driver_pwm.o [42]
+get_uart_config         0x1008'640f   0x138  Code  Lc  zf_driver_uart.o [42]
+gp_srom_resp_handler     0x802'6154     0x4  Data  Lc  cy_srom.o [24]
+gpio_get_level          0x1008'836f    0x22  Code  Gb  zf_driver_gpio.o [42]
+gpio_init               0x1008'83df    0x88  Code  Gb  zf_driver_gpio.o [42]
+gpio_set_dir            0x1008'8391    0x4e  Code  Gb  zf_driver_gpio.o [42]
+gpio_set_level          0x1008'832b    0x44  Code  Gb  zf_driver_gpio.o [42]
+gyro_x                   0x802'6168     0x4  Data  Gb  imu.o [4]
+gyro_y                   0x802'616c     0x4  Data  Gb  imu.o [4]
+gyro_z                   0x802'6170     0x4  Data  Gb  imu.o [4]
+image_error              0x802'61fc     0x2  Data  Gb  image.o [4]
+image_two_value          0x802'2358  0x1608  Data  Gb  image.o [4]
+imu660ra_acc_x           0x802'6232     0x2  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_acc_y           0x802'6234     0x2  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_acc_z           0x802'6236     0x2  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_config_file    0x1008'0080  0x2000  Data  Gb  zf_device_config.o [47]
+imu660ra_get_acc        0x1008'c6f3    0x3e  Code  Gb  zf_device_imu660ra.o [41]
+imu660ra_get_gyro       0x1008'c731    0x3e  Code  Gb  zf_device_imu660ra.o [41]
+imu660ra_gyro_x          0x802'622c     0x2  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_gyro_y          0x802'622e     0x2  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_gyro_z          0x802'6230     0x2  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_init           0x1008'c76f    0xd0  Code  Gb  zf_device_imu660ra.o [41]
+imu660ra_read_register  0x1008'c661    0x26  Code  Lc  zf_device_imu660ra.o [41]
+imu660ra_read_registers
+                        0x1008'c687    0x3a  Code  Lc  zf_device_imu660ra.o [41]
+imu660ra_self_check     0x1008'c6c1    0x32  Code  Lc  zf_device_imu660ra.o [41]
+imu660ra_transition_factor
+                         0x802'22a4     0x8  Data  Gb  zf_device_imu660ra.o [41]
+imu660ra_write_register
+                        0x1008'c625    0x1e  Code  Lc  zf_device_imu660ra.o [41]
+imu660ra_write_registers
+                        0x1008'c643    0x1e  Code  Lc  zf_device_imu660ra.o [41]
+imu_change              0x1008'96a9   0x16e  Code  Gb  imu.o [4]
+ins_track               0x1008'caa5   0x1e8  Code  Gb  ins.o [4]
+intFreqInitialized       0x802'623a     0x1  Data  Gb  cy_sysclk.o [27]
+internalBaseFreqInfo     0x802'5fe8    0x18  Data  Gb  cy_sysclk.o [27]
+interrupt_global_disable
+                        0x1008'6c6d    0x14  Code  Gb  zf_common_interrupt.o [39]
+interrupt_global_enable
+                        0x1008'6c5d    0x10  Code  Gb  zf_common_interrupt.o [39]
+interrupt_global_flag    0x802'61d0     0x4  Data  Lc  zf_common_interrupt.o [39]
+interrupt_init          0x1008'6cad    0x36  Code  Gb  zf_common_interrupt.o [39]
+interrupt_set_priority  0x1008'6ca1     0xc  Code  Gb  zf_common_interrupt.o [39]
+ips200_bgcolor           0x802'2348     0x2  Data  Lc  zf_device_ips200.o [41]
+ips200_clear            0x1008'7b75    0x84  Code  Gb  zf_device_ips200.o [41]
+ips200_debug_init       0x1008'7b07    0x6a  Code  Lc  zf_device_ips200.o [41]
+ips200_display_dir       0x802'6251     0x1  Data  Lc  zf_device_ips200.o [41]
+ips200_display_font      0x802'2352     0x1  Data  Lc  zf_device_ips200.o [41]
+ips200_display_type      0x802'6250     0x1  Data  Lc  zf_device_ips200.o [41]
+ips200_height_max        0x802'2344     0x2  Data  Gb  zf_device_ips200.o [41]
+ips200_init             0x1008'7f4d   0x36e  Code  Gb  zf_device_ips200.o [41]
+ips200_pencolor          0x802'2346     0x2  Data  Lc  zf_device_ips200.o [41]
+ips200_set_color        0x1008'7c39     0xe  Code  Gb  zf_device_ips200.o [41]
+ips200_set_dir          0x1008'7bf9    0x40  Code  Gb  zf_device_ips200.o [41]
+ips200_set_region       0x1008'7a41    0xc6  Code  Lc  zf_device_ips200.o [41]
+ips200_show_char        0x1008'7c47   0x20e  Code  Gb  zf_device_ips200.o [41]
+ips200_show_string      0x1008'7e59    0xac  Code  Gb  zf_device_ips200.o [41]
+ips200_width_max         0x802'2342     0x2  Data  Gb  zf_device_ips200.o [41]
+ips200_write_16bit_data
+                        0x1008'7987    0x56  Code  Gb  zf_device_ips200.o [41]
+ips200_write_16bit_data_array
+                        0x1008'79dd    0x64  Code  Lc  zf_device_ips200.o [41]
+ips200_write_8bit_data  0x1008'7947    0x40  Code  Lc  zf_device_ips200.o [41]
+ips200_write_command    0x1008'78e7    0x60  Code  Lc  zf_device_ips200.o [41]
+ips200_write_data       0x1008'78dd     0xa  Code  Lc  zf_device_ips200.o [41]
+ips_bl_pin               0x802'2354     0x1  Data  Lc  zf_device_ips200.o [41]
+ips_cs_pin               0x802'2355     0x1  Data  Lc  zf_device_ips200.o [41]
+ips_rst_pin              0x802'2353     0x1  Data  Lc  zf_device_ips200.o [41]
+last_left_height         0x802'6214     0x2  Data  Gb  image.o [4]
+last_right_height        0x802'6218     0x2  Data  Gb  image.o [4]
+last_valid_l_col         0x802'233c     0x2  Data  Gb  image.o [4]
+last_valid_l_row         0x802'233a     0x2  Data  Gb  image.o [4]
+last_valid_r_col         0x802'2340     0x2  Data  Gb  image.o [4]
+last_valid_r_row         0x802'233e     0x2  Data  Gb  image.o [4]
+left_circular_Cflag      0x802'621e     0x2  Data  Gb  image.o [4]
+left_circular_flag       0x802'620a     0x2  Data  Gb  image.o [4]
+left_encoder             0x802'61f8     0x2  Data  Gb  enconder.o [4]
+left_height              0x802'6212     0x2  Data  Gb  image.o [4]
+left_line_list           0x802'5a60    0x78  Data  Gb  image.o [4]
+left_lost_flag           0x802'5c40    0x78  Data  Gb  image.o [4]
+left_point               0x802'620e     0x2  Data  Gb  image.o [4]
+left_stright             0x802'6241     0x1  Data  Gb  image.o [4]
+left_target_speed        0x802'61ac     0x4  Data  Gb  motor.o [4]
+main                    0x1008'd7d1   0x110  Code  Gb  main_cm4.o [38]
+memchr                  0x1008'4795          Code  Gb  memchr.o [45]
+mid                      0x802'2338     0x2  Data  Gb  image.o [4]
+mid_line_list            0x802'5b50    0x78  Data  Gb  image.o [4]
+mid_value                0x802'234c     0x1  Data  Gb  image.o [4]
+mid_weight_list          0x802'2260    0x3c  Data  Gb  image.o [4]
+motor_init              0x1008'ce8d    0x34  Code  Gb  motor.o [4]
+mt9v03x_auto_exp         0x802'61e8     0x4  Data  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_exp_time         0x802'61ec     0x4  Data  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_finish_flag      0x802'6252     0x1  Data  Gb  zf_device_mt9v03x.o [41]
+mt9v03x_h_blank          0x802'61e4     0x4  Data  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_h_num            0x800'6918     0x2  Data  Wk  zf_device_mt9v03x.o [41]
+mt9v03x_iic_inf_struct   0x802'6110    0x10  Data  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_image            0x802'3960  0x1608  Data  Gb  zf_device_mt9v03x.o [41]
+mt9v03x_image_temp       0x802'0658  0x1608  Data  Wk  zf_device_mt9v03x.o [41]
+mt9v03x_init            0x1008'c5bd    0x2e  Code  Gb  zf_device_mt9v03x.o [41]
+mt9v03x_read_word_sccb  0x1008'8909    0x28  Code  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_row              0x802'61f0     0x4  Data  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_sccb_check_id   0x1008'8931    0x60  Code  Gb  zf_device_config_mt9v03x.o [47]
+mt9v03x_sccb_init       0x1008'c563    0x5a  Code  Gb  zf_device_mt9v03x.o [41]
+mt9v03x_sccb_set_config
+                        0x1008'8991   0x6fe  Code  Gb  zf_device_config_mt9v03x.o [47]
+mt9v03x_trig_init       0x1008'c4c7    0x9c  Code  Lc  zf_device_mt9v03x.o [41]
+mt9v03x_v_blank          0x802'61e0     0x4  Data  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_w_num            0x800'691a     0x2  Data  Wk  zf_device_mt9v03x.o [41]
+mt9v03x_write_and_check_word_sccb
+                        0x1008'8877    0x92  Code  Lc  zf_device_config_mt9v03x.o [47]
+mt9v03x_write_word_sccb
+                        0x1008'884d    0x2a  Code  Lc  zf_device_config_mt9v03x.o [47]
+open_flag                0x802'6244     0x1  Data  Gb  image.o [4]
+otsuThreshold           0x1008'2081   0x11e  Code  Gb  image.o [4]
+percent_lost             0x802'6164     0x4  Data  Gb  image.o [4]
+perfect_proportion       0x802'6253     0x1  Data  Gb  zf_device_mt9v03x.o [41]
+pid_L                    0x802'5e20    0x3c  Data  Gb  pid.o [4]
+pid_R                    0x802'5e5c    0x3c  Data  Gb  pid.o [4]
+pid_angle                0x802'5ed4    0x3c  Data  Gb  pid.o [4]
+pid_w                    0x802'5f10    0x3c  Data  Gb  pid.o [4]
+pit0_ch0_isr            0x1008'd461    0x3a  Code  Gb  cm4_isr.o [38]
+pit0_ch10_isr           0x1008'd4d7     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch11_isr           0x1008'd4e1     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch12_isr           0x1008'd4eb     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch13_isr           0x1008'd4f5     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch14_isr           0x1008'd4ff     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch15_isr           0x1008'd509     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch16_isr           0x1008'd513     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch17_isr           0x1008'd51d     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch18_isr           0x1008'd527     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch19_isr           0x1008'd531     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch1_isr            0x1008'd49b    0x1e  Code  Gb  cm4_isr.o [38]
+pit0_ch20_isr           0x1008'd53b     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch21_isr           0x1008'd545     0xa  Code  Gb  cm4_isr.o [38]
+pit0_ch2_isr            0x1008'd4cd     0xa  Code  Gb  cm4_isr.o [38]
+pit_init                0x1008'beff   0x1a6  Code  Gb  zf_driver_pit.o [42]
+pit_isr_flag_clear      0x1008'bed5    0x2a  Code  Gb  zf_driver_pit.o [42]
+pit_isr_func             0x802'22c4    0x3c  Data  Gb  zf_driver_pit.o [42]
+printf                  0x1008'cc8d    0x28  Code  Gb  printf.o [43]
+programSizeBytesLut     0x1008'e104    0x14  Data  Lc  cy_flash.o [9]
+putchar                 0x1008'dfb5    0x20  Code  Gb  putchar.o [43]
+pwm_all_channel_close   0x1008'741b    0x1a  Code  Gb  zf_driver_pwm.o [42]
+pwm_init                0x1008'748f   0x1b4  Code  Gb  zf_driver_pwm.o [42]
+pwm_l                    0x802'6228     0x2  Data  Gb  pid.o [4]
+pwm_r                    0x802'622a     0x2  Data  Gb  pid.o [4]
+pwm_set_duty            0x1008'7435    0x5a  Code  Gb  zf_driver_pwm.o [42]
+q0                       0x802'22a0     0x4  Data  Gb  imu.o [4]
+q1                       0x802'6188     0x4  Data  Gb  imu.o [4]
+q2                       0x802'618c     0x4  Data  Gb  imu.o [4]
+q3                       0x802'6190     0x4  Data  Gb  imu.o [4]
+record_encoder           0x802'6224     0x2  Data  Gb  ins.o [4]
+record_index             0x802'61a0     0x4  Data  Gb  ins.o [4]
+record_mode              0x802'6246     0x1  Data  Gb  ins.o [4]
+record_stop              0x802'6247     0x1  Data  Gb  ins.o [4]
+record_yaw               0x802'5768   0x1e0  Data  Gb  ins.o [4]
+replay_encoder           0x802'6226     0x2  Data  Gb  ins.o [4]
+replay_index             0x802'61a4     0x4  Data  Gb  ins.o [4]
+replay_mode              0x802'624a     0x1  Data  Gb  ins.o [4]
+right_circular_Cflag     0x802'6220     0x2  Data  Gb  image.o [4]
+right_circular_flag      0x802'620c     0x2  Data  Gb  image.o [4]
+right_encoder            0x802'61fa     0x2  Data  Gb  enconder.o [4]
+right_height             0x802'6216     0x2  Data  Gb  image.o [4]
+right_line_list          0x802'5ad8    0x78  Data  Gb  image.o [4]
+right_lost_flag          0x802'5cb8    0x78  Data  Gb  image.o [4]
+right_point              0x802'6210     0x2  Data  Gb  image.o [4]
+right_stright            0x802'6242     0x1  Data  Gb  image.o [4]
+right_target_speed       0x802'61b0     0x4  Data  Gb  motor.o [4]
+rode_wide                0x802'5bc8    0x78  Data  Gb  image.o [4]
+run_flag                 0x802'624b     0x1  Data  Gb  motor.o [4]
+scale                   0x1008'460f    0x46  Code  Lc  xprintflarge_nomb.o [43]
+scb_module               0x802'2324    0x14  Data  Gb  zf_driver_uart.o [42]
+search_end_l             0x802'234b     0x1  Data  Gb  image.o [4]
+search_end_r             0x802'234a     0x1  Data  Gb  image.o [4]
+sec_hand                 0x802'61f4     0x4  Data  Lc  xfail_s.o [43]
+second_pos               0x802'6208     0x2  Data  Gb  image.o [4]
+set_motor_pwm           0x1008'cec1    0xa0  Code  Gb  motor.o [4]
+set_wireless_type       0x1008'd74b    0x18  Code  Gb  zf_device_type.o [41]
+soft_iic_init           0x1008'962d    0x78  Code  Gb  zf_driver_soft_iic.o [42]
+soft_iic_read_data      0x1008'9457   0x10e  Code  Lc  zf_driver_soft_iic.o [42]
+soft_iic_sccb_read_register
+                        0x1008'95c1    0x6c  Code  Gb  zf_driver_soft_iic.o [42]
+soft_iic_sccb_write_register
+                        0x1008'9571    0x4c  Code  Gb  zf_driver_soft_iic.o [42]
+soft_iic_send_ack       0x1008'91e9    0xc6  Code  Lc  zf_driver_soft_iic.o [42]
+soft_iic_send_data      0x1008'937f    0xd8  Code  Lc  zf_driver_soft_iic.o [42]
+soft_iic_start          0x1008'90ad    0x9e  Code  Lc  zf_driver_soft_iic.o [42]
+soft_iic_stop           0x1008'914b    0x9e  Code  Lc  zf_driver_soft_iic.o [42]
+soft_iic_wait_ack       0x1008'92af    0xd0  Code  Lc  zf_driver_soft_iic.o [42]
+speed_diff               0x802'61b4     0x4  Data  Gb  motor.o [4]
+spi_get_clk_hsiom       0x1008'503b    0x28  Code  Lc  zf_driver_spi.o [42]
+spi_get_clk_pin         0x1008'4f93    0x28  Code  Lc  zf_driver_spi.o [42]
+spi_get_cs_hsiom        0x1008'50b7    0x2c  Code  Lc  zf_driver_spi.o [42]
+spi_get_cs_pin          0x1008'500f    0x2c  Code  Lc  zf_driver_spi.o [42]
+spi_get_miso_hsiom      0x1008'508b    0x2c  Code  Lc  zf_driver_spi.o [42]
+spi_get_miso_pin        0x1008'4fe3    0x2c  Code  Lc  zf_driver_spi.o [42]
+spi_get_module_clock    0x1008'50e3    0x26  Code  Lc  zf_driver_spi.o [42]
+spi_get_mosi_hsiom      0x1008'5063    0x28  Code  Lc  zf_driver_spi.o [42]
+spi_get_mosi_pin        0x1008'4fbb    0x28  Code  Lc  zf_driver_spi.o [42]
+spi_init                0x1008'5791   0x242  Code  Gb  zf_driver_spi.o [42]
+spi_module               0x802'2300    0x10  Data  Gb  zf_driver_spi.o [42]
+spi_read_8bit_registers
+                        0x1008'5689    0xf6  Code  Gb  zf_driver_spi.o [42]
+spi_write_16bit         0x1008'5331    0xae  Code  Gb  zf_driver_spi.o [42]
+spi_write_16bit_array   0x1008'53df    0xba  Code  Gb  zf_driver_spi.o [42]
+spi_write_8bit          0x1008'5267    0xca  Code  Gb  zf_driver_spi.o [42]
+spi_write_8bit_register
+                        0x1008'5499    0xf0  Code  Gb  zf_driver_spi.o [42]
+spi_write_8bit_registers
+                        0x1008'5589    0xec  Code  Gb  zf_driver_spi.o [42]
+sprintf                 0x1008'69c1    0x40  Code  Gb  sprintf.o [43]
+sqrt                    0x1008'9e9d          Code  Gb  sqrt.o [44]
+sqrtl                   0x1008'9e9d          Code  Gb  sqrt.o [44]
+start_check_row          0x802'234d     0x1  Data  Gb  image.o [4]
+strchr                  0x1008'4705          Code  Gb  strchr.o [45]
+stright_angle           0x1008'28b3   0x234  Code  Gb  image.o [4]
+strlen                  0x1008'475d          Code  Gb  strlen.o [45]
+strncpy                 0x1008'aaf1          Code  Gb  strncpy.o [45]
+switch_transition_length
+                        0x1008'5109   0x15e  Code  Lc  zf_driver_spi.o [42]
+switch_transition_length::now_length
+                         0x802'61dc     0x4  Data  Lc  zf_driver_spi.o [42]
+system_clock             0x802'61cc     0x4  Data  Gb  zf_common_clock.o [39]
+system_delay_init       0x1008'85d7    0x92  Code  Gb  zf_driver_delay.o [42]
+system_delay_ms         0x1008'8579    0x5e  Code  Gb  zf_driver_delay.o [42]
+target_yaw               0x802'61a8     0x4  Data  Gb  ins.o [4]
+threshold                0x802'623b     0x1  Data  Gb  image.o [4]
+timer_ch                 0x802'2357     0x1  Data  Lc  zf_driver_delay.o [42]
+turn_pid                 0x802'5e98    0x3c  Data  Gb  pid.o [4]
+type_default_callback   0x1008'd749     0x2  Code  Lc  zf_device_type.o [41]
+uart0_isr               0x1008'd54f    0x12  Code  Gb  cm4_isr.o [38]
+uart1_isr               0x1008'd561     0xa  Code  Gb  cm4_isr.o [38]
+uart2_isr               0x1008'd56b    0x12  Code  Gb  cm4_isr.o [38]
+uart3_isr               0x1008'd57d     0xa  Code  Gb  cm4_isr.o [38]
+uart4_isr               0x1008'd587     0xa  Code  Gb  cm4_isr.o [38]
+uartCMDRecv             0x1008'd6ef    0x4e  Code  Gb  vofa_function.o [4]
+uartSendByte            0x1008'd7ab     0xa  Code  Gb  vofa_uart.o [4]
+uartSendData            0x1008'd7b5    0x1c  Code  Gb  vofa_uart.o [4]
+uart_context             0x802'5948   0x118  Data  Gb  zf_driver_uart.o [42]
+uart_data_buffer         0x802'6144     0x8  Data  Lc  zf_driver_uart.o [42]
+uart_data_refresh        0x802'614c     0x8  Data  Lc  zf_driver_uart.o [42]
+uart_init               0x1008'67f9   0x186  Code  Gb  zf_driver_uart.o [42]
+uart_isr_func            0x802'2310    0x14  Data  Gb  zf_driver_uart.o [42]
+uart_isr_mask           0x1008'638f    0x80  Code  Gb  zf_driver_uart.o [42]
+uart_query_byte         0x1008'65af    0x30  Code  Gb  zf_driver_uart.o [42]
+uart_rx_interrupt       0x1008'66fb    0xfe  Code  Gb  zf_driver_uart.o [42]
+uart_tx_interrupt       0x1008'65df   0x11c  Code  Gb  zf_driver_uart.o [42]
+uart_write_buffer       0x1008'656f    0x1e  Code  Gb  zf_driver_uart.o [42]
+uart_write_byte         0x1008'6547    0x28  Code  Gb  zf_driver_uart.o [42]
+uart_write_string       0x1008'658d    0x22  Code  Gb  zf_driver_uart.o [42]
+vofaCommandData          0x802'6018    0x18  Data  Gb  vofa_function.o [4]
+vofaJustFloatInit       0x1008'd6c7    0x28  Code  Gb  vofa_function.o [4]
+vofaRxBufferIndex        0x802'624c     0x1  Data  Gb  vofa_uart.o [4]
+vofaSendJustFloat       0x1008'd691    0x36  Code  Gb  vofa_function.o [4]
+wireless_module_uart_handler
+                         0x802'22ac     0x4  Data  Gb  zf_device_type.o [41]
+wireless_type            0x802'6254     0x1  Data  Gb  zf_device_type.o [41]
+wireless_uart_buffer     0x802'5de0    0x40  Data  Lc  zf_device_wireless_uart.o [41]
+wireless_uart_callback  0x1008'd61d    0x22  Code  Gb  zf_device_wireless_uart.o [41]
+wireless_uart_data       0x802'6255     0x1  Data  Lc  zf_device_wireless_uart.o [41]
+wireless_uart_fifo       0x802'6048    0x18  Data  Lc  zf_device_wireless_uart.o [41]
+wireless_uart_init      0x1008'd63f    0x40  Code  Gb  zf_device_wireless_uart.o [41]
+wireless_uart_send_byte
+                        0x1008'd5e1    0x3c  Code  Gb  zf_device_wireless_uart.o [41]
+zf_debug_assert_enable   0x802'2351     0x1  Data  Lc  zf_common_debug.o [39]
+zf_debug_init_flag       0x802'624d     0x1  Data  Lc  zf_common_debug.o [39]
+
+
+[1] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\adc_11722776235721520015.dir
+[2] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\button_4990804375159372270.dir
+[3] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\canfd_1800690984773873875.dir
+[4] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\code_17896468042025673432.dir
+[5] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\cpu_15938736945165268644.dir
+[6] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\crypto_1190170608956581615.dir
+[7] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\dma_12106025507578611576.dir
+[8] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\evtgen_3404189088603873129.dir
+[9] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\flash_8529866181315662935.dir
+[10] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\flash_864493325053435817.dir
+[11] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\gpio_3999404635324069351.dir
+[12] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\ipc_10145506163450686023.dir
+[13] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\lin_18429031207028094880.dir
+[14] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\lvd_6353935867039560245.dir
+[15] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\mcwdt_4052485907822033969.dir
+[16] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\mpu_5663187252346826382.dir
+[17] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\prot_10722960861768657883.dir
+[18] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\rev_b_4986922561640112550.dir
+[19] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\rev_b_6162237342861132223.dir
+[20] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\scb_15490842639181808494.dir
+[21] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\semihosting_143864889731838620.dir
+[22] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smartio_5451710003740070188.dir
+[23] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\smif_427648126384146252.dir
+[24] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\srom_13018798572330080582.dir
+[25] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\startup_479057977785470282.dir
+[26] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sw_timer_4215635015939382130.dir
+[27] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysclk_16149231235676103872.dir
+[28] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysflt_12293435975120599261.dir
+[29] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysint_7435970359207984181.dir
+[30] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syslib_16330585751512546975.dir
+[31] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syspm_10887939769544754770.dir
+[32] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysreset_14586141425677365288.dir
+[33] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\sysrtc_10747768817563771611.dir
+[34] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\systick_16016591671695740695.dir
+[35] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\syswdt_9118657615806274156.dir
+[36] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\tcpwm_422923530147891246.dir
+[37] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\trigmux_9729677290734583340.dir
+[38] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\user_8514941877209965082.dir
+[39] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_common_1201165462030747823.dir
+[40] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_components_14936052685886095442.dir
+[41] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_device_6570275422786408770.dir
+[42] = D:\Cyt_workspace\twenty\mini_smart_car\project\iar\Debug_m4\Obj\zf_driver_11922370083829174090.dir
+[43] = dl7M_tln.a
+[44] = m7M_tls.a
+[45] = rt7M_tl.a
+[46] = shb_l.a
+[47] = zf_device_config.a
+
+  45'968 bytes of readonly  code memory
+  12'190 bytes of readonly  data memory
+  26'231 bytes of readwrite data memory (+ 5'644 absolute)
+
+Errors: none
+Warnings: none
