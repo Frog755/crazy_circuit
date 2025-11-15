@@ -17,7 +17,7 @@ void motor_init(void);
 void set_motor_pwm(int16 left_pwm , int16 right_pwm );
 void Turn_delay(float err);
 float Speed_Strategy(int16 err);
-void contral(void);
+void control(void);
 void speed_strategy(void);
 
 extern float left_target_speed;

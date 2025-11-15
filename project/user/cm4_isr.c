@@ -79,7 +79,7 @@ void pit0_ch1_isr()                     // ��ʱ��ͨ�� 1 ����
     ins_track();
     if(run_flag == 1)
     {       
-     contral();
+     control();
     }  
     
 }

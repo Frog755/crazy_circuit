@@ -132,45 +132,56 @@ void Turn_delay(float err) {
 
 float Speed_Strategy(int16 err){
 
-    pid_L.Target=80;
-    pid_R.Target=80;
-    float smooth_factor=0.2f;   //平滑因子
-    float temp_target_speed=0;
+    //pid_L.Target=80;
+    //pid_R.Target=80;
+    //float smooth_factor=0.2f;   //平滑因子
+    //float temp_target_speed=0;
      // 根据图像误差调整速度（误差越大，速度越低）
-    float error_adjustment = abs(err) ;
+    //float error_adjustment = abs(err) ;
      
     
         // 限制最大调整量（不超过最高速）
    //if (error_adjustment < 8) {
-      
-       //error_adjustment =  SPEED_HIGH   ;
-       
+   //    error_adjustment =  SPEED_MEDIUM;
    //}
-  // else if(error_adjustment >= 8 && error_adjustment <13 ){
-    
-        //error_adjustment =  SPEED_MEDIUM ;
-    
-  //  }else 
-      if(error_adjustment>=13 ){
+   //else if(error_adjustment >= 8 && error_adjustment <13 ){
+   //     error_adjustment =  0 ;
+   //}else if(error_adjustment>=13 ){
         //if(left_stright==1||right_stright==1){
       //if(is_in_turn==1)
-        error_adjustment =  SPEED_LOW ;
-        
+   //     error_adjustment =  SPEED_LOW ;
+   //}
     
-   }
-    
-    error_adjustment -= abs(err) * smooth_factor;
+   // error_adjustment -= abs(err);// * smooth_factor;
     
      // 计算临时目标速度
-    temp_target_speed =  pid_L.Target + error_adjustment;
+   //temp_target_speed =  pid_L.Target + error_adjustment;
+    //return  temp_target_speed;
+    float base_speed = 80;
+    float abs_err = abs(err);
+    float adjustment = 0;
     
+    // 更合理的速度分级
+    if(abs_err < 5) {
+        adjustment = 0;           // 小误差，保持速度
+    }
+    else if(abs_err >= 5 && abs_err < 10) {
+        adjustment = -5;          // 中等误差，轻微降速
+    }
+    else if(abs_err >= 10 && abs_err < 15) {
+        adjustment = -10;         // 较大误差，中度降速
+    }
+    else {
+        adjustment = -15;         // 大误差，大幅降速
+    }
     
-    return  temp_target_speed;
+    return base_speed + adjustment;
+    
 //***********************************************************
 
 }
 
-void contral(void)
+void control(void)
 {
    
      angle_1_time++;
@@ -189,7 +200,12 @@ void contral(void)
      }
      else //正常循迹
      {
-       base_speed_target = pid_L.Target;
+       //base_speed_target = pid_L.Target;
+       if(left_stright==1 || right_stright==1) {
+        base_speed_target = 60;  // 直角转弯降速
+      } else {
+        base_speed_target = Speed_Strategy(image_error);
+      }
        if(current_base_speed < base_speed_target&& ramp_flag==0)
        {
           current_base_speed+= speed_ramp_step;   //慢速起步，防止起步翘头
