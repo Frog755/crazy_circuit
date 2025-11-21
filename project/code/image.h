@@ -22,7 +22,7 @@ void drawkline(void);
 float Straight_Judge(uint8 dir, uint8 start, uint8 end);
 void element_cow_col(void);
 void stright_angle(void);
-void circular(void);
+void T_corner_h(void);
 void cross(void);
 void break_rode(void);
 void Add_Line(uint8 x1,uint8 y1,uint8 x2,uint8 y2);

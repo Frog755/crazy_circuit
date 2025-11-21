@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.40.1.364/W64 for ARM                  21/Nov/2025  20:56:37
+# IAR ELF Linker V9.40.1.364/W64 for ARM                  21/Nov/2025  21:19:24
 # Copyright 2007-2023 IAR Systems AB.
 #
 #    Output file  =
@@ -1264,6 +1264,7 @@ SysTick_Handler         0x1008'e9f9          Code  Wk  startup_cm4.o [25]
 SystemCoreClock          0x802'ad80     0x4  Data  Gb  system_tviibe4m_cm4.o [18]
 SystemCoreClockUpdate   0x1008'dc2d    0x94  Code  Gb  system_tviibe4m_cm4.o [18]
 SystemInit              0x1008'dc25     0x8  Code  Gb  system_tviibe4m_cm4.o [18]
+T_corner_h              0x1008'2ef3   0x10e  Code  Gb  image.o [4]
 UnwrapAngle             0x1008'906d    0x64  Code  Gb  Gyro.o [4]
 UsageFault_Handler      0x1008'e9ed          Code  Wk  startup_cm4.o [25]
 _LC                     0x1008'34b9     0x6  Code  Lc  xprintflarge_nomb.o [43]
@@ -1361,7 +1362,6 @@ calibrateGyro           0x1008'88cd   0x148  Code  Gb  Gyro.o [4]
 calibrateZ_Gyro         0x1008'88b1    0x1c  Code  Gb  Gyro.o [4]
 calibratedGyro_Z1        0x802'ad18     0x4  Data  Gb  Gyro.o [4]
 camera_finish_callback  0x1008'cfc1    0x1e  Code  Gb  zf_device_mt9v03x.o [41]
-circular                0x1008'2ef3   0x10e  Code  Gb  image.o [4]
 clock_init              0x1008'e15d    0x16  Code  Gb  zf_common_clock.o [39]
 control                 0x1008'c3ab   0x18c  Code  Gb  motor.o [4]
 cos                     0x1008'9a0d     0x4  Code  Gb  cos_sin64.o [44]

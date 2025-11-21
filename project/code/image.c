@@ -711,7 +711,7 @@ void stright_angle(void)
 
 
 /*****************************横T处理*************************************************************************************************************/
-void circular(void)
+void T_corner_h(void)
 {
     
     if(Benzene_turn_flag_up==2 && Benzene_turn_flag_left==1 && Benzene_turn_flag_right==0 && cross_flag==0 && out_cir_left==0 && out_cir_right==0)

@@ -56,7 +56,7 @@ int main(void)
             Image_Binarization();//��ֵ��
             find_line(); //ɨ��
             element_cow_col();
-            circular();
+            T_corner_h();
             stright_angle();//ֱ��
             cross();
 //            break_rode();//��·
