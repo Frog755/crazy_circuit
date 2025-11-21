@@ -27,7 +27,7 @@ int main(void)
     calibrateGyro();
     ResetYawZero();
     pit_ms_init(PIT_CH0 , 2);//�����ǲ�������
-//    pit_ms_init(PIT_CH2 ,10);//����
+    pit_ms_init(PIT_CH2 ,10);//����
     flash_init();
     vofaJustFloatInit();
     wireless_uart_init();

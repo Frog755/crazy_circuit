@@ -203,7 +203,7 @@ void    ips200_init                     (ips200_type_enum type_select);         
 // 使用示例     ips200_displayimage03x(mt9v03x_image[0], MT9V03X_W, MT9V03X_H);
 // 备注信息     拓展的一键显示函数，默认无缩放，从屏幕坐标起始点开始显示
 //-------------------------------------------------------------------------------------------------------------------
-#define ips200_displayimage03x(p, width, height)        (ips200_show_gray_image(0, 0, (p), MT9V03X_W, MT9V03X_H, (width), (height), 0))
+#define ips200_displayimage03x(p, width, height)        (ips200_show_gray_image(60, 100, (p), MT9V03X_W, MT9V03X_H, (width), (height), 0))
 //-------------------------------------------------------------------------------------------------------------------
 // 函数简介     IPS200 显示凌瞳图像
 // 参数说明     p               图像数组指针

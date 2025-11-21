@@ -5,6 +5,9 @@
 #include "enconder.h"
 #include "ins.h"
 
+//回路个数
+uint8 circuit_count = 0;
+
 
 //��ֵ����ر���?
 uint8 threshold ;
@@ -47,6 +50,7 @@ float mid_weight_list[MT9V03X_H]=
 float mid_value = 0;
 float image_error = 0;
 int16 mid = 47;
+
 
 //元素行列标志位
 int16 Benzene_turn_flag_up=0;
@@ -177,6 +181,7 @@ void find_line(void)
 {
   uint8 current_y = MT9V03X_H - 2;
   left_end_flag=0;
+  right_end_flag = 0;
   //��ʼ���������� 
     memset(left_line_list, -1, sizeof(left_line_list));
     memset(right_line_list, -1, sizeof(right_line_list));
@@ -185,14 +190,14 @@ void find_line(void)
     while(current_y > 5 && left_end_flag==0)
     {
       uint8 find_left_end = MT9V03X_W - 2;
-      if(right_cir_flag==1 || out_cir_right==1)
-      {
-        find_left_end= mid+10;//10
-      }
-      if(in_cir_left==1 && Benzene_turn_flag_down==2)
-      {
-        find_left_end= mid+5;//10
-      }
+//      if(right_cir_flag==1 || out_cir_right==1)
+//      {
+//        find_left_end= mid+10;//10
+//      }
+//      if(in_cir_left==1 && Benzene_turn_flag_down==2)
+//      {
+//        find_left_end= mid+5;//10
+//      }
       for(uint8 i=2;i<find_left_end;i++)
       {
         if(image_two_value[current_y][i]==black_point&& image_two_value[current_y][i+1]==white_point && image_two_value[current_y][i+2]==white_point)
@@ -203,7 +208,7 @@ void find_line(void)
           break;
         }
       }
-      if(current_y<60) break;
+      if(current_y<20) break;
       if(left_end_flag==0) current_y-=5;
     }
     //补低线
@@ -215,15 +220,15 @@ void find_line(void)
       }
     }
     
-    current_y = MT9V03X_H - 2;
-    right_end_flag = 0;
+    
+    
     while(current_y>5 && right_end_flag==0)
     {
       uint8 find_right_end = 2;
-      if(left_cir_flag==1 || out_cir_left==1 || in_cir_right==1)
-      {
-        find_right_end= mid-5;
-      }
+//      if(left_cir_flag==1 || out_cir_left==1 || in_cir_right==1)
+//      {
+//        find_right_end= mid-5;
+//      }
       for(uint8 i=MT9V03X_W-2;i>find_right_end;i--)
       {
         if(image_two_value[current_y][i]==black_point&& image_two_value[current_y][i-1]==white_point && image_two_value[current_y][i-2]==white_point)
@@ -234,7 +239,7 @@ void find_line(void)
           break;
         }
       }
-      if(current_y<60) break;
+      if(current_y<20) break;
       if(right_end_flag==0) current_y-=5;
     }
     
@@ -480,7 +485,7 @@ void get_error(void)
     }
   
   mid_value = weight_middle_sum/weight_sum;
-  image_error = 60-mid_value;//һ֡ͼ���ƫ���?
+  image_error = (MT9V03X_W / 2)-mid_value;//һ֡ͼ���ƫ���?
 }
 
 
@@ -595,7 +600,7 @@ void element_cow_col(void)
   }
   
   for(j=0;j<20;j++)     //������������
-  {
+  {     
     Benzene_turn_flag_left=0;
     for(i=MT9V03X_H-10;i>10;i--)
     {
@@ -640,7 +645,7 @@ void element_cow_col(void)
 }
 
 
-/****************************************ֱ��*****************************************************************************************************************************************************/
+/****************************************ֱ直角转弯逻辑****************************************************************************************************************************************************/
 void stright_angle(void)
 {
   int i,j;
@@ -705,162 +710,36 @@ void stright_angle(void)
 }
 
 
-/*****************************Բ��***********************************************************************************************************************************************************************/
+/*****************************横T处理*************************************************************************************************************/
 void circular(void)
 {
-  int i,j;
-  if(Benzene_turn_flag_up==2 && Benzene_turn_flag_down==2 && Benzene_turn_flag_left==1 && Benzene_turn_flag_right==0 && cross_flag==0 && out_cir_left==0 && right_cir_flag==0 && abs(Benzene_turn_point_down2-Benzene_turn_point_down1)>40)
-  {
-    left_cir_flag= 1;
-  }
-  else if(Benzene_turn_flag_up==2 && Benzene_turn_flag_down==2 && Benzene_turn_flag_left==0 && Benzene_turn_flag_right==1 && cross_flag==0 && out_cir_right==0 && left_cir_flag==0 && abs(Benzene_turn_point_down2-Benzene_turn_point_down1)>40)
-  {
-    right_cir_flag= 1;
-  }
-  
-  /*****�ж��뻷******/
-  if(left_cir_flag==1)
-  {
-    for(j=mid-5;j>40;j--)
-    {
-      for(i=MT9V03X_H-1;i>3;i--)
-      {
-        if(image_two_value[i][j]==black_point&& image_two_value[i+1][j]==white_point&& image_two_value[i+2][j]==white_point)
-        {
-          left_cir_point= i;
-          left_cir_height= MT9V03X_H-left_cir_point;
-          break;
-        }
-      }
-    }
-    if(abs(left_cir_height-last_left_cir_height)>=8)
-    {
-      Benzene_height_cont++;
-      if(Benzene_height_cont== 2)
-      {
-        in_cir_left=1;
-      }
-    }
-    last_left_cir_height= left_cir_height;
-  }
-  else if(right_cir_flag==1)
-  {
-    for(j=mid+10;j<100;j++)
-    {
-      for(i=MT9V03X_H-1;i>3;i--)
-      {
-        if(image_two_value[i][j]==black_point&& image_two_value[i+1][j]==white_point&& image_two_value[i+2][j]==white_point)
-        {
-          right_cir_point= i;
-          right_cir_height= MT9V03X_H-right_cir_point;
-          break;
-        }
-      }
-    }
-    if(abs(right_cir_height- last_right_cir_height)>=40)
-    {
-      Benzene_height_cont++;
-      if(Benzene_height_cont==2)
-      {
-        in_cir_right= 1;
-      }        
-    }
-    last_right_cir_height= right_cir_height;
-  }
-  
-  if(in_cir_left==1 && current_yaw<-340)
-  {
-    current_yaw = 0;
-    ResetYawZero();
-    out_cir_left=1;
     
-  }
-  else if(in_cir_right==1 && current_yaw>340)
-  {
-    current_yaw = 0;
-    ResetYawZero();
-    out_cir_right=1;
-   
-  }
-  
-  /*ʶ��Բ�����Ѳ���߼��������ұ��߸�ֵ�����ߣ��Ա�����?*/
-//  for(uint8 i=MT9V03X_H-1;i>40;i--)
-//  {
-    if(left_cir_flag==1)
+    if(Benzene_turn_flag_up==2 && Benzene_turn_flag_left==1 && Benzene_turn_flag_right==0 && cross_flag==0 && out_cir_left==0 && out_cir_right==0)
     {
-      for(uint8 i=MT9V03X_H-1;i>20;i--)
-      {
-        if(in_cir_left==1)
-        {
-          mid_line_list[i] = left_line_list[i]+2;
-          if(mid_line_list[i]<=0)
-          {
-            mid_line_list[i] = 1;
-          }
-        }
-        else
-        {
-          mid_line_list[i] = right_line_list[i]-2;
-        }
-      }      
+      left_stright=1;
     }
-    else if(right_cir_flag==1)
+    else if(Benzene_turn_flag_up==2 && Benzene_turn_flag_left==0 && Benzene_turn_flag_right==1 && cross_flag==0 && out_cir_left==0 && out_cir_right==0)
     {
-      for(uint8 i=MT9V03X_H-1;i>40;i--)
-      {
-        if(in_cir_right==1)
-        {
-          mid_line_list[i] = right_line_list[i]+3;
-          if(mid_line_list[i]<=0 || mid_line_list[i]>=MT9V03X_W)
-          {
-            mid_line_list[i]=119;
-          }
-        }
-        else
-        {
-          mid_line_list[i] = left_line_list[i];
-        }
-      }      
+      right_stright=1;
+    }
+    else
+    {
+      left_stright=0;
+      right_stright=0;
     }
     
-     /*�������Ѳ���߼�?*/
-  
-    if(out_cir_left==1)
+    if(left_stright== 1)
     {
-      for(uint8 i=MT9V03X_H-1;i>30;i--)
-      {
-        mid_line_list[i] = right_line_list[i];
-      }
-      out_cir_encoder+= (left_encoder+right_encoder)/2;
+      Add_Line(1,Benzene_turn_point_left1,mid_line_list[MT9V03X_H-2],MT9V03X_H-2);
+      Add_Line(1,0,1,Benzene_turn_point_left1);      
     }
-    else if(out_cir_right==1)
+    else if(right_stright==1)
     {
-      for(uint8 i=MT9V03X_H-1;i>50;i--)
-      {
-        mid_line_list[i] = left_line_list[i];
-      }
-      out_cir_encoder+= (left_encoder+right_encoder)/2;
+      Add_Line(MT9V03X_W-1,Benzene_turn_point_right1,mid_line_list[MT9V03X_H-2],MT9V03X_H-2);
+      Add_Line(MT9V03X_W-1,0,MT9V03X_W-1,Benzene_turn_point_right1);
     }
-    
-    if(out_cir_encoder>500 && Benzene_turn_flag_down==1)
-    {
-        left_cir_flag= 0;
-        in_cir_left=0;
-        out_cir_left=0;
-        left_cir_height=0;
-        last_left_cir_height=0;
-        
-        right_cir_flag= 0;
-        in_cir_right=0;
-        out_cir_right=0;
-        right_cir_height=0;
-        last_right_cir_height=0;
-        Benzene_height_cont=0;
-        out_cir_encoder=0;
-    }
-//  }
-  
 }
+
 
 
 /*****************************************************************************ʮ��ʶ��************************************************************************************************/

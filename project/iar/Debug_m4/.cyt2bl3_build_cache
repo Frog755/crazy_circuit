@@ -14,5 +14,11 @@
                 <Path>D:\code\mini_smart_car\project\iar\Debug_m4\List\cyt2bl3.map</Path>
             </Output>
         </Parent>
+        <Parent>
+            <Path>D:\Develop\code\mini_smart_car\project\iar\Debug_m4\Exe\cyt2bl3.out</Path>
+            <Output>
+                <Path>D:\Develop\code\mini_smart_car\project\iar\Debug_m4\List\cyt2bl3.map</Path>
+            </Output>
+        </Parent>
     </Tool>
 </BuildDb>

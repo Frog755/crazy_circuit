@@ -1,7 +1,7 @@
-D:\code\mini_smart_car\project\iar\Debug_m4\BrowseInfo\zf_device_6570275422786408770.dir\zf_device_imu660ra.pbi: \
-  D:\code\mini_smart_car\libraries\zf_device\zf_device_imu660ra.c \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_debug.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_typedef.h \
+D:\Develop\code\mini_smart_car\project\iar\Debug_m4\BrowseInfo\zf_device_6570275422786408770.dir\zf_device_imu660ra.pbi: \
+  D:\Develop\code\mini_smart_car\libraries\zf_device\zf_device_imu660ra.c \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_debug.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_typedef.h \
   D:\Develop\IAR\Embedded\ Workbench\ 9.2\arm\inc\c\stdio.h \
   D:\Develop\IAR\Embedded\ Workbench\ 9.2\arm\inc\c\ycheck.h \
   D:\Develop\IAR\Embedded\ Workbench\ 9.2\arm\inc\c\yvals.h \
@@ -16,11 +16,11 @@ D:\code\mini_smart_car\project\iar\Debug_m4\BrowseInfo\zf_device_657027542278640
   D:\Develop\IAR\Embedded\ Workbench\ 9.2\arm\inc\c\DLib_Product_string.h \
   D:\Develop\IAR\Embedded\ Workbench\ 9.2\arm\inc\c\stdlib.h \
   D:\Develop\IAR\Embedded\ Workbench\ 9.2\arm\inc\c\DLib_Product_stdlib.h \
-  D:\code\mini_smart_car\libraries\zf_device\zf_device_config.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_delay.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_typedef.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_gpio.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_soft_iic.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_gpio.h \
-  D:\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_spi.h \
-  D:\code\mini_smart_car\libraries\zf_device\zf_device_imu660ra.h
+  D:\Develop\code\mini_smart_car\libraries\zf_device\zf_device_config.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_delay.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_common\zf_common_typedef.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_gpio.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_soft_iic.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_gpio.h \
+  D:\Develop\code\mini_smart_car\project\iar\project_config\..\..\..\libraries\zf_driver\zf_driver_spi.h \
+  D:\Develop\code\mini_smart_car\libraries\zf_device\zf_device_imu660ra.h

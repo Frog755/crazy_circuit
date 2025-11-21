@@ -232,7 +232,7 @@ void control(void)
 //      {
 //        pid_L.Target=130;
 //      } 
-      speed_diff=Angular_V(&Angular_pid,diff_angle);      
+      speed_diff=Angular_V(&Angular_pid,diff_angle);
       left_target_speed= current_base_speed -  speed_diff;
       right_target_speed = current_base_speed + speed_diff;
 //      
