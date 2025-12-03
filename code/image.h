@@ -63,6 +63,7 @@ extern int16 left_T_h_flag;
 extern int16 right_T_h_flag;
 extern int16 T_turn_flag;
 extern int16_t T_flag;
+extern uint8_t T_State;
 extern int16 T_Debounce_Count;
 extern uint8 circuit_count;
 

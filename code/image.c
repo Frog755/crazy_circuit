@@ -106,6 +106,7 @@ int16 break_flag=0;
 
 //T字路口标志位
 int16_t T_flag = 0;
+uint8_t T_State = 0; //状态（最终判定）
 
 //T字路口转向记录
 int16 T_turn_flag = 0;
@@ -747,7 +748,7 @@ void T_corner_h(void)
     {
       Add_Line(1,Benzene_turn_point_left1,mid_line_list[MT9V03X_H-2],MT9V03X_H-2);
       Add_Line(1,0,1,Benzene_turn_point_left1);
-      if (current_yaw>30)
+      if (current_yaw>38)
             {
               current_yaw = 0;
               ResetYawZero();
@@ -758,7 +759,7 @@ void T_corner_h(void)
     {
       Add_Line(MT9V03X_W-1,Benzene_turn_point_right1,mid_line_list[MT9V03X_H-2],MT9V03X_H-2);
       Add_Line(MT9V03X_W-1,0,MT9V03X_W-1,Benzene_turn_point_right1);
-      if (current_yaw<-30)
+      if (current_yaw<-38)
             {
               current_yaw = 0;
               ResetYawZero();
@@ -770,55 +771,72 @@ void T_corner_h(void)
 /**********************************************竖T字路口*************************************************************************************************************/
 void T_corner()
 {
-  int i,j,white_point_cnt = 0;
-  if (Benzene_turn_flag_left==1 && Benzene_turn_flag_right==1 && Benzene_turn_flag_up==0 && cross_flag==0
-      && Benzene_turn_point_left1 > 10 && Benzene_turn_point_right1 > 10 && Benzene_turn_point_left1 < MT9V03X_H - 10 && Benzene_turn_point_right1 < MT9V03X_H - 10)
+  int i,j,i1,j1;
+  int point;
+  if(T_State == 0 )
   {
-      T_flag = 1;
-  }
-  if (T_flag == 1)
-  {
-    for (i = Benzene_turn_point_left1 - 10;i > 15; i--)
-    {
-      for (j = 2;j < MT9V03X_W - 5 ;j++)
-      {
-        if(image_two_value[i][j]==black_point&& image_two_value[i][j+1]==white_point&& image_two_value[i][j+2]==white_point)
-        {
-          T_flag = 0;
-          break;
-        }
-        else 
-        {
-          T_flag = 1;//进入T路口处理状态
-        }
-      }
+      T_flag =0;
+      if (Benzene_turn_flag_left==1 && Benzene_turn_flag_right==1 && Benzene_turn_flag_up==0 && cross_flag==0
+              && Benzene_turn_point_left1 > 10 && Benzene_turn_point_right1 > 10 && Benzene_turn_point_left1 < MT9V03X_H - 10 && Benzene_turn_point_right1 < MT9V03X_H - 10)
+     {
+          T_flag = 1;//初步符合
+     }
 
+
+
+      // 进一步校验
       if (T_flag == 1)
       {
-                for (j = MT9V03X_W / 2 - 10; j < MT9V03X_W / 2 + 10; j++)
+          // 校验1: 顶部是否存在开口
+        j1 = MT9V03X_W / 2;
+        for (i1 = 2; i1 < MT9V03X_H - 2; i1++)
+        {
+            if (image_two_value[i1][j1] == white_point)
+            {
+                point = i1;
+                break;
+            }
+        }
+        // 如果顶部白点位置偏离左右拐点连线太远，说明不是标准T字
+        if (point > (Benzene_turn_point_left1 + Benzene_turn_point_right1) / 2 + 30
+                || point < (Benzene_turn_point_left1 + Benzene_turn_point_right1) / 2 - 30)
+        {
+            T_flag = 0;
+        }
+
+        // 校验2: 扫描黑点 (修复逻辑)
+        if (T_flag == 1) // 只有前面校验通过才进行这一步
+         {
+                for (i = Benzene_turn_point_left1 - 10; i > 15; i--)
                 {
-                    for (i = MT9V03X_H - 2; i > 5; i--)
+                    for (j = 2; j < MT9V03X_W - 5; j++)
                     {
-                        if (image_two_value[i][j] == white_point)
+                        // 如果扫描区域内发现障碍物，则判定不是T字
+                        if (image_two_value[i][j] == black_point && image_two_value[i][j + 1] == white_point
+                                && image_two_value[i][j + 2] == white_point)
                         {
-                            white_point_cnt++;
+                            T_flag = 0;
+                            goto CHECK_END;
+                            // 发现不满足条件，直接跳出双层循环
                         }
                     }
-                    if (white_point_cnt < 30)
-                    {
-                        T_flag = 0;
-                        break;
-                    }
                 }
-                break;
-       }else{
-           break;
-       }
-    }
-       
+        }
+      }
+        CHECK_END : ;
+        // 如果确认是 T 字，进入转弯状态
+        if (T_flag == 1)
+        {
+            T_State = 1;      // 切换状态机到转弯模式
+            ResetYawZero();   // 清零陀螺仪积分，准备开始计算转弯角度
+            current_yaw = 0;  // 确保当前yaw为0
+        }
   }
   
-  if(T_flag == 1)
+  // ============================================================
+   // 第二步：执行转弯补线 (状态锁定)
+   // ============================================================
+  if(T_State == 1)
   {
     if(T_turn_flag == 0)//左转
     {
@@ -827,10 +845,11 @@ void T_corner()
       Add_Line(1,0,1,Benzene_turn_point_left1); 
       if (current_yaw>40)
       {
-        current_yaw = 0;
-        ResetYawZero();
         T_flag = 0;
         T_turn_flag = 1;
+        current_yaw = 0;
+        ResetYawZero();
+        T_State = 0;
       }
     }
     else if(T_turn_flag == 1)//右转
@@ -839,10 +858,11 @@ void T_corner()
       Add_Line(MT9V03X_W-1,0,MT9V03X_W-1,Benzene_turn_point_right1);
       if (current_yaw<-40)
       {
-        current_yaw = 0;
-        ResetYawZero();
         T_flag = 0;
         T_turn_flag = 0;
+        current_yaw = 0;
+        ResetYawZero();
+        T_State = 0;
       }
     }
 

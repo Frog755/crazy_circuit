@@ -98,7 +98,7 @@ float Speed_Strategy(int16 err){
      // 计算此时目标速度
    //temp_target_speed =  pid_L.Target + error_adjustment;
     //return  temp_target_speed;
-    float base_speed = 35;
+    float base_speed = 40;
     float abs_err = abs(err);
     float adjustment = 0;
 
