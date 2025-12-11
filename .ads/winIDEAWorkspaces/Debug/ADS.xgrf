@@ -13,7 +13,7 @@
        <EditorPersist>
         <__.0>
          <BookmarkList></BookmarkList>
-         <CaretPos>2522</CaretPos>
+         <CaretPos>2577</CaretPos>
          <Encoding>6</Encoding>
          <FileName>D:\Develop\Infineon\ADS_WorkSpace\Seekfree_TC264_Opensource_Library\user\cpu0_main.c</FileName>
          <FileType>1</FileType>
@@ -243,7 +243,7 @@
       <PrimaryDocumentPaneId>5</PrimaryDocumentPaneId>
       <Frames>
        <__.0>
-        <FocusedViewId>5</FocusedViewId>
+        <FocusedViewId>4</FocusedViewId>
         <FrameState>3</FrameState>
         <IsPrimary>true</IsPrimary>
         <Bounds>
@@ -389,10 +389,6 @@
       </FindInFilesDialogData>
      </GlobalData>
      <History>
-      <ComboBox>
-       <ComboBoxes>
-       </ComboBoxes>
-      </ComboBox>
      </History>
      <Options>
       <CallstackWindow>

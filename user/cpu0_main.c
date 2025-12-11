@@ -109,11 +109,14 @@ int core0_main (void)
 //            ips200_show_int(40, 200, pwm_r, 3);
             ips200_show_int(20, 200, current_yaw, 3);
             ips200_show_int(20, 220, image_error, 2);
-            ips200_show_int(20, 240, T_State, 1);
+
+            ips200_show_int(70, 200, h_count, 1);
+
+            ips200_show_int(20, 240, T_flag, 1);
             ips200_show_int(40, 240, T_turn_flag, 1);
             ips200_show_int(20, 260, left_T_h_flag, 1);
-            ips200_show_int(20, 280, right_T_h_flag, 1);
-            ips200_show_int(20, 300, cross_flag, 1);
+            ips200_show_int(40, 260, right_T_h_flag, 1);
+            ips200_show_int(20, 280, cross_flag, 1);
 
         // 此处编写需要循环执行的代码
     }

@@ -5,6 +5,7 @@
 #include "math.h"
 #include "zf_device_mt9v03x.h"
 
+
 #define white_point  255
 #define black_point  0
 #define MAX_INTERPOLATE_GAP 40
@@ -12,6 +13,8 @@
 #define JUMP_STEP_max_shang 20
 #define JUMP_STEP 5
 #define JUMP_STEP_shang 2
+#define total_T_count 2// 需要通过的T字路口总个数
+#define total_h_count 4// 需要通过的横T字路口总个数
 
 extern uint8 otsuThreshold(uint8 *image, uint16 width, uint16 height);
 void get_bin_image(void);
@@ -45,6 +48,10 @@ extern int16 Benzene_turn_flag_left;
 extern int16 Benzene_turn_flag_right;
 extern int16 Benzene_turn_flag_up;
 extern int16 Benzene_turn_flag_down;
+extern int16 Benzene_turn_point_left1;
+extern int16 Benzene_turn_point_right1;
+extern int16 Benzene_turn_point_up1;
+extern int16 Benzene_turn_point_down1;
 extern int16 left_cir_flag;
 extern int16 right_cir_flag;
 extern int16 out_cir_left;
@@ -64,6 +71,9 @@ extern int16 right_T_h_flag;
 extern int16 T_turn_flag;
 extern int16_t T_flag;
 extern uint8_t T_State;
+extern uint8_t T_count;
+extern uint8_t h_count;
+extern uint8_t h_State;
 extern int16 T_Debounce_Count;
 extern uint8 circuit_count;
 

@@ -70,7 +70,7 @@ IFX_INTERRUPT(cc60_pit_ch1_isr, 0, CCU6_0_CH1_ISR_PRIORITY)
 
     imu660ra_get_gyro();
     calibratedGyro_Z1 = calibrateZ_Gyro( imu660ra_gyro_z);
-    if(replay_mode==1 || record_mode==1 || T_flag == 1 || left_T_h_flag == 1 || right_T_h_flag == 1)
+    if(replay_mode==1 || record_mode==1 || T_State == 1)
     {
      GyroResolve();
     }
