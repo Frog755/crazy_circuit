@@ -22,25 +22,25 @@ RS_Incremental_PID angle_pid;
 void PID_Init(void)
 {
     // 左轮速度PID参数初始化 - 降低Kp，适当降低Ki，减小直线振荡
-    pid_L.Kp =12.0;    // 比例系数（原8.5，降低以减少振荡）
-    pid_L.Ki = 0.49;    // 积分系数（原3.5，适度降低防止积分累积放大振荡）
-    pid_L.Kd = 0.5;    // 微分系数（增加微分，有助于抑制振荡）
+    pid_L.Kp =11.5;    // 比例系数
+    pid_L.Ki = 0.5;    // 积分系数
+    pid_L.Kd = 0.5;    // 微分系数
     pid_L.Target = 40; // 速度目标值
 
     // 右轮速度PID参数初始化 - 与左轮保持一致以保证走直线一致性
-    pid_R.Kp = 12.0;
-    pid_R.Ki = 0.49;
+    pid_R.Kp = 11.5;
+    pid_R.Ki = 0.5;
     pid_R.Kd = 0.5;
     pid_R.Target = 40;
 
     // 角度PID参数初始化（用于方向控制等）- 可适当增加微分，抑制方向变化抖动
-    angle_pid.Kp = 3.1;    // 比例系数（原1.0，适当降低，避免瞬间方向变化过大）
-    angle_pid.Kd = 2.4;    // 微分系数（原0.4，略增）
-    angle_pid.Kp2 = 0.005;
+    angle_pid.Kp = 2.8;    // 比例系数
+    angle_pid.Kd = 2.09;    // 微分系数
+    angle_pid.Kp2 = 0.0038;
 
     // 角速度PID参数初始化（稳健转向，无需大改）
-    Angular_pid.Kp = 0.25;
-    Angular_pid.Kd = 0.1;
+    Angular_pid.Kp = 0.237;
+    Angular_pid.Kd = 0.95;
 
     // 备用角度PID参数初始化（可用于特殊情况如转弯等）
     pid_angle.Kp = 1.5;    // 比例系数

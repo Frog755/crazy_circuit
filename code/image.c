@@ -827,6 +827,10 @@ void T_corner_h(void)
         // 读取当前路口应该做的动作
         // 0: 直行 (封死路口), 1: 转弯 (切入路口)
         uint8_t action = T_turn_h_sequence[h_count];
+        if (T_count >= 2)
+            action = 0;
+        else
+            action = 1;
 
         // --- 左路口处理 ---
         if (left_T_h_flag)
@@ -879,8 +883,8 @@ void T_corner_h(void)
     {
         // 这里简单处理：只要特征消失，就认为过完了
 
-        h_count++; // 切换到下一个路口序列
-        if (h_count >= total_h_count) h_count = 0;
+//        h_count++; // 切换到下一个路口序列
+//        if (h_count >= total_h_count) h_count = 0;
 
         is_in_h_junction = 0; // 重置状态，等待下一个路口
     }
@@ -891,9 +895,11 @@ void T_corner ()
 {
     int i, j, i1, j1;
     int point = 0;
+    uint8_t valid_min = 25;
+    uint8_t valid_max = 80;
 
-    if (Benzene_turn_flag_left == 1 && Benzene_turn_flag_right == 1 && Benzene_turn_flag_up == 0 && cross_flag == 0)
-    //&& Benzene_turn_point_left1 > 10 && Benzene_turn_point_right1 > 10 && Benzene_turn_point_left1 < MT9V03X_H - 10 && Benzene_turn_point_right1 < MT9V03X_H - 10)
+    if (Benzene_turn_flag_left == 1 && Benzene_turn_flag_right == 1 && Benzene_turn_flag_up == 0 && cross_flag == 0
+    && Benzene_turn_point_left1 > valid_min && Benzene_turn_point_right1 > valid_min && Benzene_turn_point_left1 < valid_max && Benzene_turn_point_right1 < valid_max)
     {
         T_flag = 1; //初步符合
     }
@@ -948,7 +954,7 @@ void T_corner ()
                 T_State = 0;
                 T_flag = 0;
                 T_count++;
-                if(T_count >= total_T_count) T_count = 0;
+//                if(T_count >= total_T_count) T_count = 0;
                 current_yaw = 0;
                 ResetYawZero();
 
@@ -963,7 +969,7 @@ void T_corner ()
                 T_State = 0;
                 T_flag = 0;
                 T_count++;
-                if(T_count >= total_T_count) T_count = 0;
+//                if(T_count >= total_T_count) T_count = 0;
                 current_yaw = 0;
                 ResetYawZero();
 
